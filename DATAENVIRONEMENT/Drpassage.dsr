@@ -1,0 +1,235 @@
+VERSION 5.00
+Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} DRPassage 
+   Bindings        =   "DRPassage.dsx":0000
+   Caption         =   "Passage"
+   ClientHeight    =   11115
+   ClientLeft      =   60
+   ClientTop       =   345
+   ClientWidth     =   15240
+   _ExtentX        =   26882
+   _ExtentY        =   19606
+   _Version        =   393216
+   _DesignerVersion=   100685828
+   ReportWidth     =   10800
+   BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+      Name            =   "Arial"
+      Size            =   8.25
+      Charset         =   0
+      Weight          =   400
+      Underline       =   0   'False
+      Italic          =   0   'False
+      Strikethrough   =   0   'False
+   EndProperty
+   GridX           =   1
+   GridY           =   1
+   _Settings       =   7
+   DataMember      =   "DEcmdSqlPassage"
+   NumSections     =   3
+   SectionCode0    =   2
+   BeginProperty Section0 {1C13A8E0-A0B6-11D0-848E-00A0C90DC8A9} 
+      _Version        =   393216
+      Name            =   "PageHeader"
+      NumControls     =   0
+   EndProperty
+   SectionCode1    =   4
+   BeginProperty Section1 {1C13A8E0-A0B6-11D0-848E-00A0C90DC8A9} 
+      _Version        =   393216
+      Name            =   "DEcmdTableClient_Detail"
+      Object.Height          =   4860
+      NumControls     =   7
+      ItemType0       =   7
+      BeginProperty Item0 {1C13A8E5-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "Image1"
+         Object.Width           =   10800
+         Object.Height          =   4860
+         Picture         =   "DRPassage.dsx":0018
+      EndProperty
+      ItemType1       =   4
+      BeginProperty Item1 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "txtCLIENTNUMERO"
+         Object.Left            =   7470
+         Object.Top             =   1605
+         Object.Width           =   1440
+         Object.Height          =   240
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         DataField       =   "CLIENTNUMERO"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+         DataMember      =   "DEcmdSqlPassage"
+      EndProperty
+      ItemType2       =   4
+      BeginProperty Item2 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "txtUTILISATEURNOM"
+         Object.Left            =   6285
+         Object.Top             =   2295
+         Object.Width           =   1440
+         Object.Height          =   240
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         DataField       =   "UTILISATEURNOM"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+         DataMember      =   "DEcmdSqlPassage"
+      EndProperty
+      ItemType3       =   4
+      BeginProperty Item3 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "txtUTILISATEURPRENOM"
+         Object.Left            =   9150
+         Object.Top             =   2295
+         Object.Width           =   1440
+         Object.Height          =   240
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         DataField       =   "UTILISATEURPRENOM"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+         DataMember      =   "DEcmdSqlPassage"
+      EndProperty
+      ItemType4       =   4
+      BeginProperty Item4 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "txtUTILISATEURADRESSE"
+         Object.Left            =   6300
+         Object.Top             =   2745
+         Object.Width           =   4260
+         Object.Height          =   240
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         DataField       =   "UTILISATEURADRESSE"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+         DataMember      =   "DEcmdSqlPassage"
+      EndProperty
+      ItemType5       =   4
+      BeginProperty Item5 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "txtUTILISATEURCODEPOSTAL"
+         Object.Left            =   6285
+         Object.Top             =   3210
+         Object.Width           =   1440
+         Object.Height          =   240
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         DataField       =   "UTILISATEURCODEPOSTAL"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+         DataMember      =   "DEcmdSqlPassage"
+      EndProperty
+      ItemType6       =   4
+      BeginProperty Item6 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "txtUTILISATEURVILLE"
+         Object.Left            =   9105
+         Object.Top             =   3240
+         Object.Width           =   1440
+         Object.Height          =   240
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         DataField       =   "UTILISATEURVILLE"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+         DataMember      =   "DEcmdSqlPassage"
+      EndProperty
+   EndProperty
+   SectionCode2    =   7
+   BeginProperty Section2 {1C13A8E0-A0B6-11D0-848E-00A0C90DC8A9} 
+      _Version        =   393216
+      Name            =   "PageFooter"
+      NumControls     =   0
+   EndProperty
+End
+Attribute VB_Name = "DRpassage"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Attribute VB_Ext_KEY = "RVB_ModelStereotype" ,"DataReport"

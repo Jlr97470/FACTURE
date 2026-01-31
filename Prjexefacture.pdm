@@ -1,0 +1,132 @@
+[Root]
+Most Recent Package=Logiciel d'installation standard
+
+
+[Package|Logiciel d'installation standard|Root]
+SubWizProgID=PDWizard.SetupPkgSubWiz
+BuildFolder=J:\MES SOURCES\VISUAL BASIC\SOURCE\DELTA\INSTALL\FACTURE
+
+[Package|Logiciel d'installation standard|Configure DAO ISAMs]
+Applicable=No
+
+[Package|Logiciel d'installation standard|Configure DAO ODBC]
+JetWorkspace=
+ODBCDirect=
+
+[Package|Logiciel d'installation standard|Files Found]
+
+[Package|Logiciel d'installation standard|Files Released]
+
+[Package|Logiciel d'installation standard|Missing Dependency Information]
+J:\MES SOURCES\VISUAL BASIC\SOURCE\DELTA\EXECUTABLE\DLL\DeltaApi.dll=
+
+[Package|Logiciel d'installation standard|Out-of-Date Dependency Information]
+
+[Package|Logiciel d'installation standard|Files Added]
+
+[Package|Logiciel d'installation standard|Files Removed]
+
+[Package|Logiciel d'installation standard|Files In Project]
+J:\MES SOURCES\VISUAL BASIC\SOURCE\DELTA\EXECUTABLE\EXE\Facture.exe=Yes
+C:\WINNT\system32\MSVBVM60.DLL=Yes
+J:\LOGICIEL PROGRAMMATION\VISUAL STUDIO\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=Yes
+J:\LOGICIEL PROGRAMMATION\VISUAL STUDIO\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=Yes
+J:\LOGICIEL PROGRAMMATION\VISUAL STUDIO\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=Yes
+J:\LOGICIEL PROGRAMMATION\VISUAL STUDIO\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=Yes
+J:\LOGICIEL PROGRAMMATION\VISUAL STUDIO\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=Yes
+C:\WINNT\system32\VB6FR.DLL=Yes
+C:\WINNT\system32\MSBIND.DLL=Yes
+C:\WINNT\system32\MSSTDFMT.DLL=Yes
+C:\WINNT\system32\STDFTFR.DLL=Yes
+C:\WINNT\system32\MSDBRPTR.DLL=Yes
+C:\WINNT\system32\DBRPRFR.DLL=Yes
+C:\Program Files\Fichiers communs\Designer\MSDERUN.DLL=Yes
+J:\MES SOURCES\VISUAL BASIC\SOURCE\DELTA\EXECUTABLE\DLL\DeltaApi.dll=Yes
+C:\WINNT\system32\MSDATREP.OCX=Yes
+C:\WINNT\system32\DATRPFR.DLL=Yes
+C:\WINNT\system32\MSADODC.OCX=Yes
+C:\WINNT\system32\ADODCFR.DLL=Yes
+C:\WINNT\system32\MSDATGRD.OCX=Yes
+C:\WINNT\system32\DATGDFR.DLL=Yes
+C:\WINNT\system32\MSDATLST.OCX=Yes
+C:\WINNT\system32\DATLSFR.DLL=Yes
+C:\WINNT\system32\MSHFLXGD.OCX=Yes
+C:\WINNT\system32\MSHFGFR.DLL=Yes
+C:\WINNT\system32\MSMASK32.OCX=Yes
+C:\WINNT\system32\MSMSKFR.DLL=Yes
+J:\LOGICIEL PROGRAMMATION\VISUAL STUDIO\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=Yes
+J:\LOGICIEL PROGRAMMATION\VISUAL STUDIO\VB98\Wizards\PDWizard\SETUP.EXE=Yes
+J:\LOGICIEL PROGRAMMATION\VISUAL STUDIO\VB98\Wizards\PDWizard\SETUP1.EXE=Yes
+C:\WINNT\system32\VB6STKIT.DLL=Yes
+J:\LOGICIEL PROGRAMMATION\VISUAL STUDIO\VB98\Wizards\PDWizard\ST6UNST.EXE=Yes
+
+[Package|Logiciel d'installation standard|Configure Registry Files]
+Applicable=No
+
+[Package|Logiciel d'installation standard|Configure Remote Servers]
+Applicable=No
+
+[Package|Logiciel d'installation standard|Install Locations]
+J:\MES SOURCES\VISUAL BASIC\SOURCE\DELTA\EXECUTABLE\EXE\Facture.exe=$(AppPath)
+C:\WINNT\system32\MSVBVM60.DLL=$(WinSysPathSysFile)
+J:\LOGICIEL PROGRAMMATION\VISUAL STUDIO\VB98\Wizards\PDWizard\Redist\OLEAUT32.DLL=$(WinSysPathSysFile)
+J:\LOGICIEL PROGRAMMATION\VISUAL STUDIO\VB98\Wizards\PDWizard\Redist\OLEPRO32.DLL=$(WinSysPathSysFile)
+J:\LOGICIEL PROGRAMMATION\VISUAL STUDIO\VB98\Wizards\PDWizard\Redist\ASYCFILT.DLL=$(WinSysPathSysFile)
+J:\LOGICIEL PROGRAMMATION\VISUAL STUDIO\VB98\Wizards\PDWizard\Redist\STDOLE2.TLB=$(WinSysPathSysFile)
+J:\LOGICIEL PROGRAMMATION\VISUAL STUDIO\VB98\Wizards\PDWizard\Redist\COMCAT.DLL=$(WinSysPathSysFile)
+C:\WINNT\system32\VB6FR.DLL=$(WinSysPath)
+C:\WINNT\system32\MSBIND.DLL=$(WinSysPath)
+C:\WINNT\system32\MSSTDFMT.DLL=$(WinSysPath)
+C:\WINNT\system32\STDFTFR.DLL=$(WinSysPath)
+C:\WINNT\system32\MSDBRPTR.DLL=$(WinSysPath)
+C:\WINNT\system32\DBRPRFR.DLL=$(WinSysPath)
+C:\Program Files\Fichiers communs\Designer\MSDERUN.DLL=$(CommonFiles)\designer
+J:\MES SOURCES\VISUAL BASIC\SOURCE\DELTA\EXECUTABLE\DLL\DeltaApi.dll=$(WinSysPath)
+C:\WINNT\system32\MSDATREP.OCX=$(WinSysPath)
+C:\WINNT\system32\DATRPFR.DLL=$(WinSysPath)
+C:\WINNT\system32\MSADODC.OCX=$(WinSysPath)
+C:\WINNT\system32\ADODCFR.DLL=$(WinSysPath)
+C:\WINNT\system32\MSDATGRD.OCX=$(WinSysPath)
+C:\WINNT\system32\DATGDFR.DLL=$(WinSysPath)
+C:\WINNT\system32\MSDATLST.OCX=$(WinSysPath)
+C:\WINNT\system32\DATLSFR.DLL=$(WinSysPath)
+C:\WINNT\system32\MSHFLXGD.OCX=$(WinSysPath)
+C:\WINNT\system32\MSHFGFR.DLL=$(WinSysPath)
+C:\WINNT\system32\MSMASK32.OCX=$(WinSysPath)
+C:\WINNT\system32\MSMSKFR.DLL=$(WinSysPath)
+J:\LOGICIEL PROGRAMMATION\VISUAL STUDIO\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=$(AppPath)
+J:\LOGICIEL PROGRAMMATION\VISUAL STUDIO\VB98\Wizards\PDWizard\SETUP.EXE=$(AppPath)
+J:\LOGICIEL PROGRAMMATION\VISUAL STUDIO\VB98\Wizards\PDWizard\SETUP1.EXE=$(WinPath)
+C:\WINNT\system32\VB6STKIT.DLL=$(WinSysPathSysFile)
+J:\LOGICIEL PROGRAMMATION\VISUAL STUDIO\VB98\Wizards\PDWizard\ST6UNST.EXE=$(WinPath)
+
+[Package|Logiciel d'installation standard|Configure Shared Files]
+Applicable=Yes
+J:\MES SOURCES\VISUAL BASIC\SOURCE\DELTA\EXECUTABLE\EXE\Facture.exe=No
+J:\LOGICIEL PROGRAMMATION\VISUAL STUDIO\VB98\Wizards\PDWizard\Redist\MDAC_TYP.EXE=No
+
+[Package|Logiciel d'installation standard|Distribution]
+Type=single
+Size=
+Title=Facture
+
+[Package|Logiciel d'installation standard|IconGroups]
+Group0=Delta informatique
+PrivateGroup0=-1
+Parent0=$(Programs)
+
+[Package|Logiciel d'installation standard|Delta informatique]
+Icon1=Facture.exe
+Title1=Facture
+StartIn1=$(AppPath)
+Key1=Icon1
+
+[Package|Logiciel d'installation standard|Package]
+PackageFolder=J:\MES SOURCES\VISUAL BASIC\SOURCE\DELTA\INSTALL\FACTURE
+ProjectFolder=J:\MES SOURCES\VISUAL BASIC\SOURCE\DELTA\PROJET\EXECUTABLE STANDARD\EXECUTABLE FACTURE
+ServerSideCab=
+File1=J:\MES SOURCES\VISUAL BASIC\SOURCE\DELTA\INSTALL\FACTURE\setup.exe
+File2=J:\MES SOURCES\VISUAL BASIC\SOURCE\DELTA\INSTALL\FACTURE\Setup.Lst
+File3=J:\MES SOURCES\VISUAL BASIC\SOURCE\DELTA\INSTALL\FACTURE\Facture.CAB
+Handler1=PDWizard.FolderDplySubWiz
+Handler2=PDWizard.WebPostDplySubWiz

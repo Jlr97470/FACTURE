@@ -1,0 +1,749 @@
+VERSION 5.00
+Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} DREcheancier 
+   Bindings        =   "DREcheancier.dsx":0000
+   Caption         =   "Echeancier"
+   ClientHeight    =   11115
+   ClientLeft      =   60
+   ClientTop       =   345
+   ClientWidth     =   15240
+   _ExtentX        =   26882
+   _ExtentY        =   19606
+   _Version        =   393216
+   _DesignerVersion=   100685828
+   ReportWidth     =   11655
+   BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+      Name            =   "Arial"
+      Size            =   8.25
+      Charset         =   0
+      Weight          =   400
+      Underline       =   0   'False
+      Italic          =   0   'False
+      Strikethrough   =   0   'False
+   EndProperty
+   GridX           =   1
+   GridY           =   1
+   _Settings       =   7
+   DataMember      =   "DEcmdSqlEcheancier"
+   NumSections     =   3
+   SectionCode0    =   2
+   BeginProperty Section0 {1C13A8E0-A0B6-11D0-848E-00A0C90DC8A9} 
+      _Version        =   393216
+      Name            =   "PageHeader"
+      NumControls     =   0
+   EndProperty
+   SectionCode1    =   4
+   BeginProperty Section1 {1C13A8E0-A0B6-11D0-848E-00A0C90DC8A9} 
+      _Version        =   393216
+      Name            =   "DEcmdTableClient_Detail"
+      Object.Height          =   41631
+      NumControls     =   24
+      ItemType0       =   4
+      BeginProperty Item0 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "txtCLIENTNUMERO"
+         Object.Left            =   1695
+         Object.Top             =   2715
+         Object.Width           =   1440
+         Object.Height          =   240
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         DataField       =   "CLIENTNUMERO"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+         DataMember      =   "DEcmdSqlEcheancier"
+      EndProperty
+      ItemType1       =   4
+      BeginProperty Item1 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "txtUTILISATEURNOM"
+         Object.Left            =   5100
+         Object.Top             =   5670
+         Object.Width           =   1440
+         Object.Height          =   240
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         DataField       =   "UTILISATEURNOM"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+         DataMember      =   "DEcmdSqlEcheancier"
+      EndProperty
+      ItemType2       =   4
+      BeginProperty Item2 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "Text1"
+         Object.Left            =   6615
+         Object.Top             =   5670
+         Object.Width           =   1440
+         Object.Height          =   240
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         DataField       =   "UTILISATEURPRENOM"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+         DataMember      =   "DEcmdSqlEcheancier"
+      EndProperty
+      ItemType3       =   4
+      BeginProperty Item3 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "txtUTILISATEURADRESSE"
+         Object.Left            =   5115
+         Object.Top             =   5970
+         Object.Width           =   2925
+         Object.Height          =   240
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         DataField       =   "UTILISATEURADRESSE"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+         DataMember      =   "DEcmdSqlEcheancier"
+      EndProperty
+      ItemType4       =   4
+      BeginProperty Item4 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "txtUTILISATEURVILLE"
+         Object.Left            =   5100
+         Object.Top             =   6300
+         Object.Width           =   1440
+         Object.Height          =   240
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         DataField       =   "UTILISATEURVILLE"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+         DataMember      =   "DEcmdSqlEcheancier"
+      EndProperty
+      ItemType5       =   4
+      BeginProperty Item5 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "txtUTILISATEURCODEPOSTAL"
+         Object.Left            =   6615
+         Object.Top             =   6300
+         Object.Width           =   1440
+         Object.Height          =   240
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         DataField       =   "UTILISATEURCODEPOSTAL"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+         DataMember      =   "DEcmdSqlEcheancier"
+      EndProperty
+      ItemType6       =   4
+      BeginProperty Item6 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "txtUTILISATEURTELEPHONEBUREAU"
+         Object.Left            =   1710
+         Object.Top             =   5925
+         Object.Width           =   1440
+         Object.Height          =   240
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         DataField       =   "UTILISATEURTELEPHONEBUREAU"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+         DataMember      =   "DEcmdSqlEcheancier"
+      EndProperty
+      ItemType7       =   4
+      BeginProperty Item7 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "txtUTILISATEURTELEPHONEMAISON"
+         Object.Left            =   1695
+         Object.Top             =   5430
+         Object.Width           =   1440
+         Object.Height          =   240
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         DataField       =   "UTILISATEURTELEPHONEMAISON"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+         DataMember      =   "DEcmdSqlEcheancier"
+      EndProperty
+      ItemType8       =   4
+      BeginProperty Item8 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "txtSOUSCRIPTEURNOM"
+         Object.Left            =   5115
+         Object.Top             =   3480
+         Object.Width           =   1440
+         Object.Height          =   240
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         DataField       =   "SOUSCRIPTEURNOM"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+         DataMember      =   "DEcmdSqlEcheancier"
+      EndProperty
+      ItemType9       =   4
+      BeginProperty Item9 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "txtSOUSCRIPTEURPRENOM"
+         Object.Left            =   6585
+         Object.Top             =   3480
+         Object.Width           =   1440
+         Object.Height          =   240
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         DataField       =   "SOUSCRIPTEURPRENOM"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+         DataMember      =   "DEcmdSqlEcheancier"
+      EndProperty
+      ItemType10      =   4
+      BeginProperty Item10 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "txtSOUSCRIPTEURADRESSE"
+         Object.Left            =   5115
+         Object.Top             =   3810
+         Object.Width           =   2910
+         Object.Height          =   240
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         DataField       =   "SOUSCRIPTEURADRESSE"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+         DataMember      =   "DEcmdSqlEcheancier"
+      EndProperty
+      ItemType11      =   4
+      BeginProperty Item11 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "txtSOUSCRIPTEURVILLE"
+         Object.Left            =   5100
+         Object.Top             =   4140
+         Object.Width           =   1440
+         Object.Height          =   240
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         DataField       =   "SOUSCRIPTEURVILLE"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+         DataMember      =   "DEcmdSqlEcheancier"
+      EndProperty
+      ItemType12      =   4
+      BeginProperty Item12 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "txtSOUSCRIPTEURCODEPOSTAL"
+         Object.Left            =   6600
+         Object.Top             =   4140
+         Object.Width           =   1440
+         Object.Height          =   240
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         DataField       =   "SOUSCRIPTEURCODEPOSTAL"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+         DataMember      =   "DEcmdSqlEcheancier"
+      EndProperty
+      ItemType13      =   4
+      BeginProperty Item13 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "txtSOUSCRIPTEURTELEPHONEBUREAU"
+         Object.Left            =   1695
+         Object.Top             =   3870
+         Object.Width           =   1440
+         Object.Height          =   240
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         DataField       =   "SOUSCRIPTEURTELEPHONEBUREAU"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+         DataMember      =   "DEcmdSqlEcheancier"
+      EndProperty
+      ItemType14      =   4
+      BeginProperty Item14 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "txtSOUSCRIPTEURTELEPHONEMAISON"
+         Object.Left            =   1695
+         Object.Top             =   3390
+         Object.Width           =   1440
+         Object.Height          =   240
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         DataField       =   "SOUSCRIPTEURTELEPHONEMAISON"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+         DataMember      =   "DEcmdSqlEcheancier"
+      EndProperty
+      ItemType15      =   4
+      BeginProperty Item15 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "txtCLIENTBATIMENT"
+         Object.Left            =   1140
+         Object.Top             =   7140
+         Object.Width           =   465
+         Object.Height          =   240
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         DataField       =   "CLIENTBATIMENT"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+         DataMember      =   "DEcmdSqlEcheancier"
+      EndProperty
+      ItemType16      =   4
+      BeginProperty Item16 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "txtCLIENTETAGE"
+         Object.Left            =   2820
+         Object.Top             =   7155
+         Object.Width           =   1155
+         Object.Height          =   240
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         DataField       =   "CLIENTETAGE"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+         DataMember      =   "DEcmdSqlEcheancier"
+      EndProperty
+      ItemType17      =   4
+      BeginProperty Item17 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "txtCLIENTESC"
+         Object.Left            =   5385
+         Object.Top             =   7155
+         Object.Width           =   960
+         Object.Height          =   240
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         DataField       =   "CLIENTESC"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+         DataMember      =   "DEcmdSqlEcheancier"
+      EndProperty
+      ItemType18      =   4
+      BeginProperty Item18 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "txtCLIENTPORTE"
+         Object.Left            =   7590
+         Object.Top             =   7155
+         Object.Width           =   765
+         Object.Height          =   240
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         DataField       =   "CLIENTPORTE"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+         DataMember      =   "DEcmdSqlEcheancier"
+      EndProperty
+      ItemType19      =   4
+      BeginProperty Item19 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "txtCLIENTDIGICODE"
+         Object.Left            =   10185
+         Object.Top             =   7155
+         Object.Width           =   1365
+         Object.Height          =   240
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         DataField       =   "CLIENTDIGICODE"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+         DataMember      =   "DEcmdSqlEcheancier"
+      EndProperty
+      ItemType20      =   4
+      BeginProperty Item20 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "txtCHAUDIEREMARQUE"
+         Object.Left            =   1680
+         Object.Top             =   8520
+         Object.Width           =   2745
+         Object.Height          =   240
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         DataField       =   "CHAUDIEREMARQUE"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+         DataMember      =   "DEcmdSqlEcheancier"
+      EndProperty
+      ItemType21      =   4
+      BeginProperty Item21 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "txtCHAUDIERENUMERO"
+         Object.Left            =   4215
+         Object.Top             =   9180
+         Object.Width           =   3480
+         Object.Height          =   240
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         DataField       =   "CHAUDIERENUMERO"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+         DataMember      =   "DEcmdSqlEcheancier"
+      EndProperty
+      ItemType22      =   4
+      BeginProperty Item22 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "txtCHAUDIEREPUISSANCE"
+         Object.Left            =   1920
+         Object.Top             =   9180
+         Object.Width           =   1275
+         Object.Height          =   240
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         DataField       =   "CHAUDIEREPUISSANCE"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+         DataMember      =   "DEcmdSqlEcheancier"
+      EndProperty
+      ItemType23      =   4
+      BeginProperty Item23 {1C13A8E2-A0B6-11D0-848E-00A0C90DC8A9} 
+         _Version        =   393216
+         Name            =   "txtCHAUDIEREGAZ"
+         Object.Left            =   10215
+         Object.Top             =   9180
+         Object.Width           =   1440
+         Object.Height          =   240
+         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
+            Name            =   "Arial"
+            Size            =   8.25
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         DataField       =   "CHAUDIEREGAZ"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+         DataMember      =   "DEcmdSqlEcheancier"
+      EndProperty
+   EndProperty
+   SectionCode2    =   7
+   BeginProperty Section2 {1C13A8E0-A0B6-11D0-848E-00A0C90DC8A9} 
+      _Version        =   393216
+      Name            =   "PageFooter"
+      NumControls     =   0
+   EndProperty
+End
+Attribute VB_Name = "DREcheancier"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = True
+Attribute VB_Exposed = False
+Attribute VB_Ext_KEY = "RVB_ModelStereotype" ,"DataReport"
