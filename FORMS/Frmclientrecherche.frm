@@ -188,7 +188,6 @@ Option Explicit
 '******************************************************************************
 '***    Constante Qui Defini Les Libelles De La feuille En Erreur                   ***
 '******************************************************************************
-Private Const mconFeuilleType = "FORM"                                                       ' Le type de feuille
 Private Const mconFeuilleNom = "FrmClientRecherche"                                  ' Le nom de la Feuille
 
 '******************************************************************************
@@ -217,7 +216,7 @@ Form_Load_Exit:
     ' Fin
 Form_Load_Erreur:
     ' Je l'ecrit dans le journal
-    gfloLogWebBase.AjouteErreur App, mconFeuilleType, mconFeuilleNom, LIBELLEEVENEMENT, "Form_Load", vbNullString, Err
+    gfloLogWebBase.AjouteErreur App, FEUILLEFORM, mconFeuilleNom, INSTRUCTIONEVENEMENT, "Form_Load", vbNullString, Err
     ' Je Continue
     Resume Form_Load_Exit
     ' Fin
@@ -312,7 +311,7 @@ cmdOk_Click_Exit:
     ' Fin
 cmdOk_Click_Erreur:
     ' Je l'ecrit dans le journal
-    gfloLogWebBase.AjouteErreur App, mconFeuilleType, mconFeuilleNom, LIBELLEEVENEMENT, "cmdOk_Click", vbNullString, Err
+    gfloLogWebBase.AjouteErreur App, FEUILLEFORM, mconFeuilleNom, INSTRUCTIONEVENEMENT, "cmdOk_Click", vbNullString, Err
     ' Je Continue
     Resume cmdOk_Click_Exit
     ' Fin

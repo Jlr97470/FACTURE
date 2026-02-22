@@ -59,7 +59,6 @@ Option Explicit
 '******************************************************************************
 '***    Constante Qui Defini Les Libelles De La feuille En Erreur                   ***
 '******************************************************************************
-Private Const mconFeuilleType = "FORM"                                                       ' Le type de feuille
 Private Const mconFeuilleNom = "MDIFacture"                                               ' Le nom de la Feuille
 
 
@@ -89,7 +88,7 @@ Form_Load_Exit:
    ' Fin
 Form_Load_Erreur:
      ' Je l'ecrit dans le journal
-     gfloLogWebBase.AjouteErreur App, mconFeuilleType, mconFeuilleNom, LIBELLEEVENEMENT, "Form_Load", vbNullString, Err
+     gfloLogWebBase.AjouteErreur App, FEUILLEMDIFORM, mconFeuilleNom, INSTRUCTIONEVENEMENT, "Form_Load", vbNullString, Err
     ' Je continue
     Resume Form_Load_Exit
     ' Fin
@@ -121,7 +120,7 @@ MDIForm_Unload_Exit:
     ' Fin
 MDIForm_Unload_Erreur:
     ' Je l'ecrit dans le journal
-    gfloLogWebBase.AjouteErreur App, mconFeuilleType, mconFeuilleNom, LIBELLEEVENEMENT, "MDIForm_Unload", vbNullString, Err
+    gfloLogWebBase.AjouteErreur App, FEUILLEMDIFORM, mconFeuilleNom, INSTRUCTIONEVENEMENT, "MDIForm_Unload", vbNullString, Err
     ' Je Continue
     Resume MDIForm_Unload_Exit
     ' Fin
@@ -158,7 +157,7 @@ mnuPanneau_Click_Exit:
     ' Fin
 mnuPanneau_Click_Erreur:
     ' Je l'ecrit dans le journal
-    gfloLogWebBase.AjouteErreur App, mconFeuilleType, mconFeuilleNom, LIBELLEEVENEMENT, "mnuPanneau_Click", Index, Err
+    gfloLogWebBase.AjouteErreur App, FEUILLEMDIFORM, mconFeuilleNom, INSTRUCTIONEVENEMENT, "mnuPanneau_Click", Index, Err
     ' Je Continue
     Resume mnuPanneau_Click_Exit
     ' Fin
