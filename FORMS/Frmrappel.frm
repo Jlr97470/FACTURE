@@ -674,7 +674,7 @@ Option Explicit
 '******************************************************************************
 '***    Constante Qui Defini Les Libelles De La feuille En Erreur                   ***
 '******************************************************************************
-Private Const mconFeuilleNom = "FrmRappel"                                             ' Le nom de la Feuille
+Private Const LOGFEUILLENOM = "FrmRappel"                                             ' Le nom de la Feuille
 
 '******************************************************************************
 '***    Evenement                                                                                       ***
@@ -705,7 +705,7 @@ Form_Load_Exit:
     ' Fin
 Form_Load_Erreur:
     ' Je l'ecrit dans le journal
-    gfloLogWebBase.AjouteErreur App, FEUILLEFORM, mconFeuilleNom, INSTRUCTIONEVENEMENT, "Form_Load", vbNullString, Err
+    gfloLogWebBase.AjouteErreur App, FEUILLEFORM, LOGFEUILLENOM, INSTRUCTIONEVENEMENT, "Form_Load", vbNullString, Err
     ' Je Continue
     Resume Form_Load_Exit
     ' Fin

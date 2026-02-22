@@ -2424,7 +2424,7 @@ Option Explicit
 '******************************************************************************
 '***    Constante Qui Defini Les Libelles De La feuille En Erreur                   ***
 '******************************************************************************
-Private Const mconFeuilleNom = "FrmClient"                                             ' Le nom de la Feuille
+Private Const LOGFEUILLENOM = "FrmClient"                                             ' Le nom de la Feuille
 
 '******************************************************************************
 '***    Declaration De Variable Priver                                                          ***
@@ -2483,7 +2483,7 @@ Form_Load_Exit:
     ' Fin
 Form_Load_Erreur:
     ' Je l'ecrit dans le journal
-    gfloLogWebBase.AjouteErreur App, FEUILLEFORM, mconFeuilleNom, INSTRUCTIONEVENEMENT, "Form_Load", vbNullString, Err
+    gfloLogWebBase.AjouteErreur App, FEUILLEFORM, LOGFEUILLENOM, INSTRUCTIONEVENEMENT, "Form_Load", vbNullString, Err
     ' Je Continue
     Resume Form_Load_Exit
     ' Fin
@@ -2658,7 +2658,7 @@ cmdButton_Click_Exit:
     ' Fin
 cmdButton_Click_Erreur:
     ' Je l'ecrit dans le journal
-    gfloLogWebBase.AjouteErreur App, FEUILLEFORM, mconFeuilleNom, INSTRUCTIONEVENEMENT, "cmdButton_Click", Index, Err
+    gfloLogWebBase.AjouteErreur App, FEUILLEFORM, LOGFEUILLENOM, INSTRUCTIONEVENEMENT, "cmdButton_Click", Index, Err
     ' Je Continue
     Resume cmdButton_Click_Exit
     ' Fin
