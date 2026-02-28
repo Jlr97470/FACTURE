@@ -29,7 +29,7 @@ Begin VB.Form FrmClient
       Height          =   615
       Index           =   10
       Left            =   11280
-      TabIndex        =   81
+      TabIndex        =   77
       Top             =   7440
       Width           =   1455
    End
@@ -47,7 +47,7 @@ Begin VB.Form FrmClient
       Height          =   615
       Index           =   9
       Left            =   9840
-      TabIndex        =   80
+      TabIndex        =   76
       Top             =   7440
       Width           =   1455
    End
@@ -65,7 +65,7 @@ Begin VB.Form FrmClient
       Height          =   615
       Index           =   8
       Left            =   8400
-      TabIndex        =   78
+      TabIndex        =   75
       Top             =   7440
       Width           =   1455
    End
@@ -84,45 +84,12 @@ Begin VB.Form FrmClient
       ForeColor       =   &H0000FFFF&
       Height          =   4095
       Left            =   6480
-      TabIndex        =   68
+      TabIndex        =   67
       Top             =   3240
       Width           =   6255
-      Begin MSMask.MaskEdBox MaskEdBox11 
-         Bindings        =   "Frmclient.frx":0000
-         DataField       =   "CONTRATV1"
-         BeginProperty DataFormat 
-            Type            =   1
-            Format          =   "dd-MM-yyyy"
-            HaveTrueFalseNull=   0
-            FirstDayOfWeek  =   0
-            FirstWeekOfYear =   0
-            LCID            =   1036
-            SubFormatType   =   3
-         EndProperty
-         DataMember      =   "DEcmdTableClient"
-         DataSource      =   "DEFacture"
-         Height          =   255
-         Left            =   1080
-         TabIndex        =   79
-         Top             =   2280
-         Width           =   1215
-         _ExtentX        =   2143
-         _ExtentY        =   450
-         _Version        =   393216
-         BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-            Name            =   "Palatino Linotype"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         PromptChar      =   "_"
-      End
       Begin MSMask.MaskEdBox MaskEdBox8 
-         Bindings        =   "Frmclient.frx":001B
-         DataField       =   "CONTRATPAIEMENT"
+         Bindings        =   "Frmclient.frx":0000
+         DataField       =   "CliConDatePaiment"
          BeginProperty DataFormat 
             Type            =   1
             Format          =   "dd-MM-yyyy"
@@ -156,7 +123,7 @@ Begin VB.Form FrmClient
          PromptChar      =   "_"
       End
       Begin VB.TextBox txtCONTRATPRIX 
-         DataField       =   "CONTRATPRIX"
+         DataField       =   "CliConPrix"
          DataMember      =   "DEcmdTableClient"
          DataSource      =   "DEFacture"
          BeginProperty Font 
@@ -170,12 +137,12 @@ Begin VB.Form FrmClient
          EndProperty
          Height          =   285
          Left            =   4440
-         TabIndex        =   31
+         TabIndex        =   30
          Top             =   1320
          Width           =   1095
       End
       Begin VB.TextBox txtCONTRATTVA 
-         DataField       =   "CONTRATTVA"
+         DataField       =   "CliConTVA"
          DataMember      =   "DEcmdTableClient"
          DataSource      =   "DEFacture"
          BeginProperty Font 
@@ -189,31 +156,12 @@ Begin VB.Form FrmClient
          EndProperty
          Height          =   285
          Left            =   1080
-         TabIndex        =   30
+         TabIndex        =   29
          Top             =   1320
          Width           =   615
       End
-      Begin VB.TextBox txtCONTRATCATEGORIE 
-         DataField       =   "CONTRATCATEGORIE"
-         DataMember      =   "DEcmdTableClient"
-         DataSource      =   "DEFacture"
-         BeginProperty Font 
-            Name            =   "Palatino Linotype"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         Height          =   285
-         Left            =   4440
-         TabIndex        =   29
-         Top             =   840
-         Width           =   1215
-      End
       Begin VB.TextBox txtCONTRATCOEFFICIENT 
-         DataField       =   "CONTRATCOEFFICIENT"
+         DataField       =   "CliConCoefficient"
          DataMember      =   "DEcmdTableClient"
          DataSource      =   "DEFacture"
          BeginProperty Font 
@@ -232,7 +180,7 @@ Begin VB.Form FrmClient
          Width           =   855
       End
       Begin VB.TextBox txtCONTRATTYPE 
-         DataField       =   "CONTRATTYPE"
+         DataField       =   "CliConType"
          DataMember      =   "DEcmdTableClient"
          DataSource      =   "DEFacture"
          BeginProperty Font 
@@ -251,8 +199,8 @@ Begin VB.Form FrmClient
          Width           =   615
       End
       Begin MSMask.MaskEdBox MaskEdBox9 
-         Bindings        =   "Frmclient.frx":0036
-         DataField       =   "CONTRATDEBUT"
+         Bindings        =   "Frmclient.frx":001B
+         DataField       =   "CliConDateDebut"
          BeginProperty DataFormat 
             Type            =   1
             Format          =   "dd-MM-yyyy"
@@ -266,7 +214,7 @@ Begin VB.Form FrmClient
          DataSource      =   "DEFacture"
          Height          =   285
          Left            =   1080
-         TabIndex        =   32
+         TabIndex        =   31
          Top             =   1800
          Width           =   1215
          _ExtentX        =   2143
@@ -286,8 +234,8 @@ Begin VB.Form FrmClient
          PromptChar      =   "_"
       End
       Begin MSMask.MaskEdBox MaskEdBox10 
-         Bindings        =   "Frmclient.frx":0051
-         DataField       =   "CONTRATFIN"
+         Bindings        =   "Frmclient.frx":0036
+         DataField       =   "CliConDateFin"
          BeginProperty DataFormat 
             Type            =   1
             Format          =   "dd-MM-yyyy"
@@ -301,7 +249,7 @@ Begin VB.Form FrmClient
          DataSource      =   "DEFacture"
          Height          =   285
          Left            =   4440
-         TabIndex        =   33
+         TabIndex        =   32
          Top             =   1800
          Width           =   1215
          _ExtentX        =   2143
@@ -338,31 +286,9 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   27
          Left            =   3210
-         TabIndex        =   77
+         TabIndex        =   74
          Top             =   1320
          Width           =   450
-      End
-      Begin VB.Label lblFieldLabel 
-         Alignment       =   1  'Right Justify
-         AutoSize        =   -1  'True
-         BackColor       =   &H00C00000&
-         Caption         =   "V1:"
-         BeginProperty Font 
-            Name            =   "Palatino Linotype"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H0000FFFF&
-         Height          =   240
-         Index           =   26
-         Left            =   120
-         TabIndex        =   76
-         Top             =   2280
-         Width           =   270
       End
       Begin VB.Label lblFieldLabel 
          Alignment       =   1  'Right Justify
@@ -382,7 +308,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   25
          Left            =   3240
-         TabIndex        =   75
+         TabIndex        =   73
          Top             =   1800
          Width           =   330
       End
@@ -404,7 +330,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   24
          Left            =   120
-         TabIndex        =   74
+         TabIndex        =   72
          Top             =   1800
          Width           =   645
       End
@@ -426,31 +352,9 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   23
          Left            =   120
-         TabIndex        =   73
+         TabIndex        =   71
          Top             =   1320
          Width           =   435
-      End
-      Begin VB.Label lblFieldLabel 
-         Alignment       =   1  'Right Justify
-         AutoSize        =   -1  'True
-         BackColor       =   &H00C00000&
-         Caption         =   "CATEGORIE:"
-         BeginProperty Font 
-            Name            =   "Palatino Linotype"
-            Size            =   8.25
-            Charset         =   0
-            Weight          =   700
-            Underline       =   0   'False
-            Italic          =   0   'False
-            Strikethrough   =   0   'False
-         EndProperty
-         ForeColor       =   &H0000FFFF&
-         Height          =   240
-         Index           =   22
-         Left            =   3135
-         TabIndex        =   72
-         Top             =   840
-         Width           =   1080
       End
       Begin VB.Label lblFieldLabel 
          Alignment       =   1  'Right Justify
@@ -470,7 +374,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   21
          Left            =   120
-         TabIndex        =   71
+         TabIndex        =   70
          Top             =   840
          Width           =   990
       End
@@ -492,7 +396,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   20
          Left            =   3135
-         TabIndex        =   70
+         TabIndex        =   69
          Top             =   360
          Width           =   1185
       End
@@ -514,7 +418,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   19
          Left            =   90
-         TabIndex        =   69
+         TabIndex        =   68
          Top             =   360
          Width           =   495
       End
@@ -534,11 +438,11 @@ Begin VB.Form FrmClient
       ForeColor       =   &H0000FFFF&
       Height          =   1695
       Left            =   6480
-      TabIndex        =   61
+      TabIndex        =   60
       Top             =   1440
       Width           =   6255
       Begin VB.TextBox txtCHAUDIEREPUISSANCE 
-         DataField       =   "CHAUDIEREPUISSANCE"
+         DataField       =   "CliChdPuissance"
          DataMember      =   "DEcmdTableClient"
          DataSource      =   "DEFacture"
          BeginProperty Font 
@@ -552,12 +456,12 @@ Begin VB.Form FrmClient
          EndProperty
          Height          =   285
          Left            =   1080
-         TabIndex        =   67
+         TabIndex        =   66
          Top             =   1320
          Width           =   615
       End
       Begin VB.TextBox txtCHAUDIERETYPE 
-         DataField       =   "CHAUDIERETYPE"
+         DataField       =   "CliChdIdentification"
          DataMember      =   "DEcmdTableClient"
          DataSource      =   "DEFacture"
          BeginProperty Font 
@@ -576,7 +480,7 @@ Begin VB.Form FrmClient
          Width           =   1215
       End
       Begin VB.TextBox txtCHAUDIEREGAZ 
-         DataField       =   "CHAUDIEREGAZ"
+         DataField       =   "CliChdGaz"
          DataMember      =   "DEcmdTableClient"
          DataSource      =   "DEFacture"
          BeginProperty Font 
@@ -595,7 +499,7 @@ Begin VB.Form FrmClient
          Width           =   615
       End
       Begin VB.TextBox txtCHAUDIEREMARQUE 
-         DataField       =   "CHAUDIEREMARQUE"
+         DataField       =   "CliChdMarque"
          DataMember      =   "DEcmdTableClient"
          DataSource      =   "DEFacture"
          BeginProperty Font 
@@ -614,8 +518,8 @@ Begin VB.Form FrmClient
          Width           =   3735
       End
       Begin MSMask.MaskEdBox MaskEdBox7 
-         Bindings        =   "Frmclient.frx":006C
-         DataField       =   "CHAUDIERENUMERO"
+         Bindings        =   "Frmclient.frx":0051
+         DataField       =   "CliChdRef"
          DataMember      =   "DEcmdTableClient"
          DataSource      =   "DEFacture"
          Height          =   285
@@ -658,7 +562,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   18
          Left            =   30
-         TabIndex        =   66
+         TabIndex        =   65
          Top             =   1320
          Width           =   1050
       End
@@ -680,7 +584,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   17
          Left            =   3810
-         TabIndex        =   65
+         TabIndex        =   64
          Top             =   960
          Width           =   495
       End
@@ -702,7 +606,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   16
          Left            =   75
-         TabIndex        =   64
+         TabIndex        =   63
          Top             =   960
          Width           =   420
       End
@@ -724,7 +628,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   10
          Left            =   45
-         TabIndex        =   63
+         TabIndex        =   62
          Top             =   240
          Width           =   825
       End
@@ -746,7 +650,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   9
          Left            =   105
-         TabIndex        =   62
+         TabIndex        =   61
          Top             =   600
          Width           =   240
       End
@@ -766,11 +670,11 @@ Begin VB.Form FrmClient
       ForeColor       =   &H0000FFFF&
       Height          =   1335
       Left            =   6480
-      TabIndex        =   45
+      TabIndex        =   44
       Top             =   0
       Width           =   6255
       Begin VB.TextBox txtLOCALISATIONDIGICODE 
-         DataField       =   "CLIENTDIGICODE"
+         DataField       =   "CliDigicode"
          DataMember      =   "DEcmdTableClient"
          DataSource      =   "DEFacture"
          BeginProperty Font 
@@ -789,7 +693,7 @@ Begin VB.Form FrmClient
          Width           =   1095
       End
       Begin VB.TextBox txtLOCALISATIONPORTE 
-         DataField       =   "CLIENTPORTE"
+         DataField       =   "CliPorte"
          DataMember      =   "DEcmdTableClient"
          DataSource      =   "DEFacture"
          BeginProperty Font 
@@ -808,7 +712,7 @@ Begin VB.Form FrmClient
          Width           =   615
       End
       Begin VB.TextBox txtLOCALISATIONETAGE 
-         DataField       =   "CLIENTETAGE"
+         DataField       =   "CliEtage"
          DataMember      =   "DEcmdTableClient"
          DataSource      =   "DEFacture"
          BeginProperty Font 
@@ -827,7 +731,7 @@ Begin VB.Form FrmClient
          Width           =   615
       End
       Begin VB.TextBox txtLOCALISATIONESC 
-         DataField       =   "CLIENTESC"
+         DataField       =   "CliEscalier"
          DataMember      =   "DEcmdTableClient"
          DataSource      =   "DEFacture"
          BeginProperty Font 
@@ -846,7 +750,7 @@ Begin VB.Form FrmClient
          Width           =   615
       End
       Begin VB.TextBox txtLOCALISATIONBATIMENT 
-         DataField       =   "CLIENTBATIMENT"
+         DataField       =   "CliBatiment"
          DataMember      =   "DEcmdTableClient"
          DataSource      =   "DEFacture"
          BeginProperty Font 
@@ -882,7 +786,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   15
          Left            =   3450
-         TabIndex        =   50
+         TabIndex        =   49
          Top             =   900
          Width           =   930
       End
@@ -904,7 +808,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   14
          Left            =   375
-         TabIndex        =   49
+         TabIndex        =   48
          Top             =   885
          Width           =   645
       End
@@ -926,7 +830,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   13
          Left            =   3735
-         TabIndex        =   48
+         TabIndex        =   47
          Top             =   375
          Width           =   645
       End
@@ -948,7 +852,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   12
          Left            =   2205
-         TabIndex        =   47
+         TabIndex        =   46
          Top             =   360
          Width           =   375
       End
@@ -970,16 +874,16 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   11
          Left            =   120
-         TabIndex        =   46
+         TabIndex        =   45
          Top             =   345
          Width           =   1005
       End
    End
-   Begin MSDataGridLib.DataGrid DataGrid1 
-      Bindings        =   "Frmclient.frx":0087
+   Begin MSDataGridLib.DataGrid DataGridClient 
+      Bindings        =   "Frmclient.frx":006C
       Height          =   3015
       Left            =   0
-      TabIndex        =   44
+      TabIndex        =   43
       Top             =   4320
       Width           =   6375
       _ExtentX        =   11245
@@ -1008,10 +912,10 @@ Begin VB.Form FrmClient
          Strikethrough   =   0   'False
       EndProperty
       DataMember      =   "DEcmdTableClient"
-      ColumnCount     =   37
+      ColumnCount     =   54
       BeginProperty Column00 
-         DataField       =   "CLECLIENT"
-         Caption         =   "CLECLIENT"
+         DataField       =   "CliNum"
+         Caption         =   "CliNum"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1023,8 +927,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column01 
-         DataField       =   "CLIENTNUMERO"
-         Caption         =   "NUMERO"
+         DataField       =   "CliCode"
+         Caption         =   "CliCode"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1036,8 +940,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column02 
-         DataField       =   "UTILISATEURNOM"
-         Caption         =   "NOM"
+         DataField       =   "CliDateCre"
+         Caption         =   "CliDateCre"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1049,8 +953,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column03 
-         DataField       =   "UTILISATEURPRENOM"
-         Caption         =   "PRENOM"
+         DataField       =   "CliDateMaj"
+         Caption         =   "CliDateMaj"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1062,8 +966,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column04 
-         DataField       =   "UTILISATEURADRESSE"
-         Caption         =   "ADRESSE"
+         DataField       =   "CliCivCode"
+         Caption         =   "CliCivCode"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1075,8 +979,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column05 
-         DataField       =   "UTILISATEURVILLE"
-         Caption         =   "VILLE"
+         DataField       =   "CliNom"
+         Caption         =   "CliNom"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1088,8 +992,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column06 
-         DataField       =   "UTILISATEURCODEPOSTAL"
-         Caption         =   "CODEPOSTAL"
+         DataField       =   "CliPrenom"
+         Caption         =   "CliPrenom"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1101,8 +1005,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column07 
-         DataField       =   "UTILISATEURNOTE"
-         Caption         =   "NOTE"
+         DataField       =   "CliAdresse"
+         Caption         =   "CliAdresse"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1114,8 +1018,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column08 
-         DataField       =   "UTILISATEURTELEPHONEBUREAU"
-         Caption         =   "TEL.BUR"
+         DataField       =   "CliVilNum"
+         Caption         =   "CliVilNum"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1127,8 +1031,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column09 
-         DataField       =   "UTILISATEURTELEPHONEMAISON"
-         Caption         =   "TEL.DOM"
+         DataField       =   "CliNote"
+         Caption         =   "CliNote"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1140,8 +1044,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column10 
-         DataField       =   "SOUSCRIPTEURNOM"
-         Caption         =   "NOM"
+         DataField       =   "CliTel1Libelle"
+         Caption         =   "CliTel1Libelle"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1153,8 +1057,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column11 
-         DataField       =   "SOUSCRIPTEURPRENOM"
-         Caption         =   "PRENOM"
+         DataField       =   "CliTel1"
+         Caption         =   "CliTel1"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1166,8 +1070,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column12 
-         DataField       =   "SOUSCRIPTEURADRESSE"
-         Caption         =   "ADRESSE"
+         DataField       =   "CliTel2Libelle"
+         Caption         =   "CliTel2Libelle"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1179,8 +1083,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column13 
-         DataField       =   "SOUSCRIPTEURVILLE"
-         Caption         =   "VILLE"
+         DataField       =   "CliTel2"
+         Caption         =   "CliTel2"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1192,8 +1096,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column14 
-         DataField       =   "SOUSCRIPTEURCODEPOSTAL"
-         Caption         =   "CODEPOSTAL"
+         DataField       =   "CliBatiment"
+         Caption         =   "CliBatiment"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1205,8 +1109,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column15 
-         DataField       =   "SOUSCRIPTEURNOTE"
-         Caption         =   "NOTE"
+         DataField       =   "CliEscalier"
+         Caption         =   "CliEscalier"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1218,8 +1122,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column16 
-         DataField       =   "SOUSCRIPTEURTELEPHONEBUREAU"
-         Caption         =   "TEL.BUR"
+         DataField       =   "CliEtage"
+         Caption         =   "CliEtage"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1231,8 +1135,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column17 
-         DataField       =   "SOUSCRIPTEURTELEPHONEMAISON"
-         Caption         =   "TEL.DOM"
+         DataField       =   "CliPorte"
+         Caption         =   "CliPorte"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1244,8 +1148,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column18 
-         DataField       =   "CLIENTBATIMENT"
-         Caption         =   "BATIMENT"
+         DataField       =   "CliDigicode"
+         Caption         =   "CliDigicode"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1257,8 +1161,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column19 
-         DataField       =   "CLIENTESC"
-         Caption         =   "ESC"
+         DataField       =   "CliSousCivCode"
+         Caption         =   "CliSousCivCode"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1270,8 +1174,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column20 
-         DataField       =   "CLIENTETAGE"
-         Caption         =   "ETAGE"
+         DataField       =   "CliSousNom"
+         Caption         =   "CliSousNom"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1283,8 +1187,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column21 
-         DataField       =   "CLIENTPORTE"
-         Caption         =   "PORTE"
+         DataField       =   "CliSousPrenom"
+         Caption         =   "CliSousPrenom"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1296,8 +1200,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column22 
-         DataField       =   "CLIENTDIGICODE"
-         Caption         =   "DIGICODE"
+         DataField       =   "CliSousAdresse"
+         Caption         =   "CliSousAdresse"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1309,8 +1213,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column23 
-         DataField       =   "CHAUDIERENUMERO"
-         Caption         =   "NUMERO"
+         DataField       =   "CliSousVilNum"
+         Caption         =   "CliSousVilNum"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1322,8 +1226,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column24 
-         DataField       =   "CHAUDIEREGAZ"
-         Caption         =   "GAZ"
+         DataField       =   "CliSousNote"
+         Caption         =   "CliSousNote"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1335,8 +1239,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column25 
-         DataField       =   "CHAUDIERETYPE"
-         Caption         =   "TYPE"
+         DataField       =   "CliSousTel1"
+         Caption         =   "CliSousTel1"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1348,8 +1252,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column26 
-         DataField       =   "CHAUDIEREPUISSANCE"
-         Caption         =   "PUISSANCE"
+         DataField       =   "CliSousTel1Libelle"
+         Caption         =   "CliSousTel1Libelle"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1361,8 +1265,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column27 
-         DataField       =   "CHAUDIEREMARQUE"
-         Caption         =   "MARQUE"
+         DataField       =   "CliSousTel2"
+         Caption         =   "CliSousTel2"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1374,8 +1278,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column28 
-         DataField       =   "CONTRATTYPE"
-         Caption         =   "TYPE"
+         DataField       =   "CliSousTel2Libelle"
+         Caption         =   "CliSousTel2Libelle"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1387,8 +1291,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column29 
-         DataField       =   "CONTRATCOEFFICIENT"
-         Caption         =   "COEFFICIENT"
+         DataField       =   "CliChdNum"
+         Caption         =   "CliChdNum"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1400,8 +1304,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column30 
-         DataField       =   "CONTRATPAIEMENT"
-         Caption         =   "PAIEMENT"
+         DataField       =   "CliChdCliNum"
+         Caption         =   "CliChdCliNum"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1413,8 +1317,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column31 
-         DataField       =   "CONTRATCATEGORIE"
-         Caption         =   "CATEGORIE"
+         DataField       =   "CliChdRef"
+         Caption         =   "CliChdRef"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1426,8 +1330,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column32 
-         DataField       =   "CONTRATTVA"
-         Caption         =   "TVA"
+         DataField       =   "CliChdDateServ"
+         Caption         =   "CliChdDateServ"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1439,8 +1343,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column33 
-         DataField       =   "CONTRATDEBUT"
-         Caption         =   "DEBUT"
+         DataField       =   "CliChdGaz"
+         Caption         =   "CliChdGaz"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1452,8 +1356,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column34 
-         DataField       =   "CONTRATFIN"
-         Caption         =   "FIN"
+         DataField       =   "CliChdIdentification"
+         Caption         =   "CliChdIdentification"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1465,8 +1369,8 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column35 
-         DataField       =   "CONTRATV1"
-         Caption         =   "V1"
+         DataField       =   "CliChdMarque"
+         Caption         =   "CliChdMarque"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1478,8 +1382,229 @@ Begin VB.Form FrmClient
          EndProperty
       EndProperty
       BeginProperty Column36 
-         DataField       =   "CONTRATPRIX"
-         Caption         =   "PRIX"
+         DataField       =   "CliChdPuissance"
+         Caption         =   "CliChdPuissance"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+      EndProperty
+      BeginProperty Column37 
+         DataField       =   "CliChdRemarque"
+         Caption         =   "CliChdRemarque"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+      EndProperty
+      BeginProperty Column38 
+         DataField       =   "CliChdActif"
+         Caption         =   "CliChdActif"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+      EndProperty
+      BeginProperty Column39 
+         DataField       =   "CliConNum"
+         Caption         =   "CliConNum"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+      EndProperty
+      BeginProperty Column40 
+         DataField       =   "CliConCliNum"
+         Caption         =   "CliConCliNum"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+      EndProperty
+      BeginProperty Column41 
+         DataField       =   "CliConDateDebut"
+         Caption         =   "CliConDateDebut"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+      EndProperty
+      BeginProperty Column42 
+         DataField       =   "CliConDateFin"
+         Caption         =   "CliConDateFin"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+      EndProperty
+      BeginProperty Column43 
+         DataField       =   "CliConDatePaiment"
+         Caption         =   "CliConDatePaiment"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+      EndProperty
+      BeginProperty Column44 
+         DataField       =   "CliConType"
+         Caption         =   "CliConType"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+      EndProperty
+      BeginProperty Column45 
+         DataField       =   "CliConCoefficient"
+         Caption         =   "CliConCoefficient"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+      EndProperty
+      BeginProperty Column46 
+         DataField       =   "CliConPrixHT"
+         Caption         =   "CliConPrixHT"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+      EndProperty
+      BeginProperty Column47 
+         DataField       =   "CliConTVA"
+         Caption         =   "CliConTVA"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+      EndProperty
+      BeginProperty Column48 
+         DataField       =   "CliConPrix"
+         Caption         =   "CliConPrix"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+      EndProperty
+      BeginProperty Column49 
+         DataField       =   "CliConActif"
+         Caption         =   "CliConActif"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+      EndProperty
+      BeginProperty Column50 
+         DataField       =   "CliVilNom"
+         Caption         =   "CliVilNom"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+      EndProperty
+      BeginProperty Column51 
+         DataField       =   "CliVilCodePostal"
+         Caption         =   "CliVilCodePostal"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+      EndProperty
+      BeginProperty Column52 
+         DataField       =   "CliSousVilNom"
+         Caption         =   "CliSousVilNom"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+      EndProperty
+      BeginProperty Column53 
+         DataField       =   "CliSousVilCodePostal"
+         Caption         =   "CliSousVilCodePostal"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -1494,66 +1619,64 @@ Begin VB.Form FrmClient
       BeginProperty Split0 
          AllowFocus      =   0   'False
          BeginProperty Column00 
-            Object.Visible         =   0   'False
-            ColumnWidth     =   945,071
+            ColumnWidth     =   915,024
          EndProperty
          BeginProperty Column01 
-            Object.Visible         =   -1  'True
-            ColumnWidth     =   1739,906
+            ColumnWidth     =   840,189
          EndProperty
          BeginProperty Column02 
             ColumnWidth     =   1739,906
          EndProperty
          BeginProperty Column03 
-            ColumnWidth     =   1844,787
+            ColumnWidth     =   1739,906
          EndProperty
          BeginProperty Column04 
-            ColumnWidth     =   1904,882
+            ColumnWidth     =   854,929
          EndProperty
          BeginProperty Column05 
             ColumnWidth     =   1739,906
          EndProperty
          BeginProperty Column06 
-            ColumnWidth     =   2220,094
+            ColumnWidth     =   1739,906
          EndProperty
          BeginProperty Column07 
             ColumnWidth     =   1739,906
          EndProperty
          BeginProperty Column08 
-            ColumnWidth     =   2789,858
+            ColumnWidth     =   915,024
          EndProperty
          BeginProperty Column09 
-            ColumnWidth     =   2745,071
+            ColumnWidth     =   1739,906
          EndProperty
          BeginProperty Column10 
             ColumnWidth     =   1739,906
          EndProperty
          BeginProperty Column11 
-            ColumnWidth     =   2055,118
+            ColumnWidth     =   1140,095
          EndProperty
          BeginProperty Column12 
-            ColumnWidth     =   2115,213
+            ColumnWidth     =   1739,906
          EndProperty
          BeginProperty Column13 
-            ColumnWidth     =   1785,26
+            ColumnWidth     =   1140,095
          EndProperty
          BeginProperty Column14 
-            ColumnWidth     =   2429,858
+            ColumnWidth     =   1140,095
          EndProperty
          BeginProperty Column15 
-            ColumnWidth     =   1800
+            ColumnWidth     =   810,142
          EndProperty
          BeginProperty Column16 
-            ColumnWidth     =   3000,189
+            ColumnWidth     =   764,787
          EndProperty
          BeginProperty Column17 
-            ColumnWidth     =   2954,835
+            ColumnWidth     =   1140,095
          EndProperty
          BeginProperty Column18 
             ColumnWidth     =   1739,906
          EndProperty
          BeginProperty Column19 
-            ColumnWidth     =   1739,906
+            ColumnWidth     =   1214,929
          EndProperty
          BeginProperty Column20 
             ColumnWidth     =   1739,906
@@ -1565,31 +1688,31 @@ Begin VB.Form FrmClient
             ColumnWidth     =   1739,906
          EndProperty
          BeginProperty Column23 
-            ColumnWidth     =   1739,906
+            ColumnWidth     =   1170,142
          EndProperty
          BeginProperty Column24 
             ColumnWidth     =   1739,906
          EndProperty
          BeginProperty Column25 
-            ColumnWidth     =   1739,906
+            ColumnWidth     =   1140,095
          EndProperty
          BeginProperty Column26 
-            ColumnWidth     =   1934,929
+            ColumnWidth     =   1739,906
          EndProperty
          BeginProperty Column27 
-            ColumnWidth     =   1739,906
+            ColumnWidth     =   1140,095
          EndProperty
          BeginProperty Column28 
             ColumnWidth     =   1739,906
          EndProperty
          BeginProperty Column29 
-            ColumnWidth     =   1890,142
+            ColumnWidth     =   915,024
          EndProperty
          BeginProperty Column30 
-            ColumnWidth     =   1739,906
+            ColumnWidth     =   1094,74
          EndProperty
          BeginProperty Column31 
-            ColumnWidth     =   1785,26
+            ColumnWidth     =   1440
          EndProperty
          BeginProperty Column32 
             ColumnWidth     =   1739,906
@@ -1604,7 +1727,58 @@ Begin VB.Form FrmClient
             ColumnWidth     =   1739,906
          EndProperty
          BeginProperty Column36 
+            ColumnWidth     =   1275,024
+         EndProperty
+         BeginProperty Column37 
             ColumnWidth     =   1739,906
+         EndProperty
+         BeginProperty Column38 
+            ColumnWidth     =   900,284
+         EndProperty
+         BeginProperty Column39 
+            ColumnWidth     =   915,024
+         EndProperty
+         BeginProperty Column40 
+            ColumnWidth     =   1094,74
+         EndProperty
+         BeginProperty Column41 
+            ColumnWidth     =   1739,906
+         EndProperty
+         BeginProperty Column42 
+            ColumnWidth     =   1739,906
+         EndProperty
+         BeginProperty Column43 
+            ColumnWidth     =   1739,906
+         EndProperty
+         BeginProperty Column44 
+            ColumnWidth     =   1739,906
+         EndProperty
+         BeginProperty Column45 
+            ColumnWidth     =   1349,858
+         EndProperty
+         BeginProperty Column46 
+            ColumnWidth     =   1739,906
+         EndProperty
+         BeginProperty Column47 
+            ColumnWidth     =   1739,906
+         EndProperty
+         BeginProperty Column48 
+            ColumnWidth     =   1739,906
+         EndProperty
+         BeginProperty Column49 
+            ColumnWidth     =   900,284
+         EndProperty
+         BeginProperty Column50 
+            ColumnWidth     =   1739,906
+         EndProperty
+         BeginProperty Column51 
+            ColumnWidth     =   1319,811
+         EndProperty
+         BeginProperty Column52 
+            ColumnWidth     =   1739,906
+         EndProperty
+         BeginProperty Column53 
+            ColumnWidth     =   1679,811
          EndProperty
       EndProperty
    End
@@ -1623,12 +1797,12 @@ Begin VB.Form FrmClient
       ForeColor       =   &H0000FFFF&
       Height          =   4215
       Left            =   0
-      TabIndex        =   40
+      TabIndex        =   39
       Top             =   0
       Width           =   6375
       Begin MSMask.MaskEdBox MaskEdBox6 
-         Bindings        =   "Frmclient.frx":009F
-         DataField       =   "SOUSCRIPTEURTELEPHONEMAISON"
+         Bindings        =   "Frmclient.frx":0084
+         DataField       =   "CliSousTel2"
          DataMember      =   "DEcmdTableClient"
          DataSource      =   "DEFacture"
          Height          =   285
@@ -1655,8 +1829,8 @@ Begin VB.Form FrmClient
          PromptChar      =   "_"
       End
       Begin MSMask.MaskEdBox MaskEdBox5 
-         Bindings        =   "Frmclient.frx":00BA
-         DataField       =   "SOUSCRIPTEURTELEPHONEBUREAU"
+         Bindings        =   "Frmclient.frx":009F
+         DataField       =   "CliSousTel1"
          DataMember      =   "DEcmdTableClient"
          DataSource      =   "DEFacture"
          Height          =   285
@@ -1683,8 +1857,8 @@ Begin VB.Form FrmClient
          PromptChar      =   "_"
       End
       Begin MSMask.MaskEdBox MaskEdBox3 
-         Bindings        =   "Frmclient.frx":00D5
-         DataField       =   "UTILISATEURTELEPHONEMAISON"
+         Bindings        =   "Frmclient.frx":00BA
+         DataField       =   "CliTel2"
          BeginProperty DataFormat 
             Type            =   0
             Format          =   "##-##-##-##-##"
@@ -1720,8 +1894,8 @@ Begin VB.Form FrmClient
          PromptChar      =   "_"
       End
       Begin MSMask.MaskEdBox MaskEdBox2 
-         Bindings        =   "Frmclient.frx":00F0
-         DataField       =   "UTILISATEURTELEPHONEBUREAU"
+         Bindings        =   "Frmclient.frx":00D5
+         DataField       =   "CliSousTel1"
          BeginProperty DataFormat 
             Type            =   0
             Format          =   "##-##-##-##-##"
@@ -1757,8 +1931,8 @@ Begin VB.Form FrmClient
          PromptChar      =   "_"
       End
       Begin MSMask.MaskEdBox MaskEdBox1 
-         Bindings        =   "Frmclient.frx":010B
-         DataField       =   "UTILISATEURCODEPOSTAL"
+         Bindings        =   "Frmclient.frx":00F0
+         DataField       =   "CliVilCodePostal"
          BeginProperty DataFormat 
             Type            =   0
             Format          =   "#####"
@@ -1793,7 +1967,7 @@ Begin VB.Form FrmClient
          PromptChar      =   "_"
       End
       Begin VB.TextBox txtSOUSCRIPTEURNOTE 
-         DataField       =   "SOUSCRIPTEURNOTE"
+         DataField       =   "CliSousNote"
          DataMember      =   "DEcmdTableClient"
          DataSource      =   "DEFacture"
          BeginProperty Font 
@@ -1812,7 +1986,7 @@ Begin VB.Form FrmClient
          Width           =   2265
       End
       Begin VB.TextBox txtUTILISATEURNOTE 
-         DataField       =   "UTILISATEURNOTE"
+         DataField       =   "CliNote"
          DataMember      =   "DEcmdTableClient"
          DataSource      =   "DEFacture"
          BeginProperty Font 
@@ -1831,7 +2005,7 @@ Begin VB.Form FrmClient
          Width           =   2265
       End
       Begin VB.TextBox txtSOUSCRIPTEURVILLE 
-         DataField       =   "SOUSCRIPTEURVILLE"
+         DataField       =   "CliSousVilNom"
          DataMember      =   "DEcmdTableClient"
          DataSource      =   "DEFacture"
          BeginProperty Font 
@@ -1850,7 +2024,7 @@ Begin VB.Form FrmClient
          Width           =   2265
       End
       Begin VB.TextBox txtUTILISATEURVILLE 
-         DataField       =   "UTILISATEURVILLE"
+         DataField       =   "CliVilNom"
          DataMember      =   "DEcmdTableClient"
          DataSource      =   "DEFacture"
          BeginProperty Font 
@@ -1869,7 +2043,7 @@ Begin VB.Form FrmClient
          Width           =   2265
       End
       Begin VB.TextBox txtSOUSCRIPTEURADRESSE 
-         DataField       =   "SOUSCRIPTEURADRESSE"
+         DataField       =   "CliSousAdresse"
          DataMember      =   "DEcmdTableClient"
          DataSource      =   "DEFacture"
          BeginProperty Font 
@@ -1888,7 +2062,7 @@ Begin VB.Form FrmClient
          Width           =   2265
       End
       Begin VB.TextBox txtUTILISATEURADRESSE 
-         DataField       =   "UTILISATEURADRESSE"
+         DataField       =   "CliAdresse"
          DataMember      =   "DEcmdTableClient"
          DataSource      =   "DEFacture"
          BeginProperty Font 
@@ -1907,7 +2081,7 @@ Begin VB.Form FrmClient
          Width           =   2265
       End
       Begin VB.TextBox txtSOUSCRIPTEURPRENOM 
-         DataField       =   "SOUSCRIPTEURPRENOM"
+         DataField       =   "CliSousPrenom"
          DataMember      =   "DEcmdTableClient"
          DataSource      =   "DEFacture"
          BeginProperty Font 
@@ -1926,7 +2100,7 @@ Begin VB.Form FrmClient
          Width           =   2265
       End
       Begin VB.TextBox txtUTILISATEURPRENOM 
-         DataField       =   "UTILISATEURPRENOM"
+         DataField       =   "CliPrenom"
          DataMember      =   "DEcmdTableClient"
          DataSource      =   "DEFacture"
          BeginProperty Font 
@@ -1945,7 +2119,7 @@ Begin VB.Form FrmClient
          Width           =   2265
       End
       Begin VB.TextBox txtSOUSCRIPTEURNOM 
-         DataField       =   "SOUSCRIPTEURNOM"
+         DataField       =   "CliSousNom"
          DataMember      =   "DEcmdTableClient"
          DataSource      =   "DEFacture"
          BeginProperty Font 
@@ -1964,7 +2138,7 @@ Begin VB.Form FrmClient
          Width           =   2265
       End
       Begin VB.TextBox txtUTILISATEURNOM 
-         DataField       =   "UTILISATEURNOM"
+         DataField       =   "CliNom"
          DataMember      =   "DEcmdTableClient"
          DataSource      =   "DEFacture"
          BeginProperty Font 
@@ -1983,8 +2157,8 @@ Begin VB.Form FrmClient
          Width           =   2265
       End
       Begin MSMask.MaskEdBox ctlCLIENTNUMERO 
-         Bindings        =   "Frmclient.frx":0155
-         DataField       =   "CLIENTNUMERO"
+         Bindings        =   "Frmclient.frx":013A
+         DataField       =   "CliNum"
          DataMember      =   "DEcmdTableClient"
          DataSource      =   "DEFacture"
          Height          =   285
@@ -2010,8 +2184,8 @@ Begin VB.Form FrmClient
          PromptChar      =   "_"
       End
       Begin MSMask.MaskEdBox MaskEdBox4 
-         Bindings        =   "Frmclient.frx":0170
-         DataField       =   "SOUSCRIPTEURCODEPOSTAL"
+         Bindings        =   "Frmclient.frx":0155
+         DataField       =   "CliSousVilCodePostal"
          BeginProperty DataFormat 
             Type            =   0
             Format          =   "#####"
@@ -2060,7 +2234,7 @@ Begin VB.Form FrmClient
          ForeColor       =   &H0000FFFF&
          Height          =   255
          Left            =   3840
-         TabIndex        =   60
+         TabIndex        =   59
          Top             =   720
          Width           =   2295
       End
@@ -2079,7 +2253,7 @@ Begin VB.Form FrmClient
          ForeColor       =   &H0000FFFF&
          Height          =   255
          Left            =   1440
-         TabIndex        =   59
+         TabIndex        =   58
          Top             =   720
          Width           =   2055
       End
@@ -2101,7 +2275,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   8
          Left            =   120
-         TabIndex        =   58
+         TabIndex        =   57
          Top             =   3840
          Width           =   855
       End
@@ -2123,7 +2297,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   7
          Left            =   120
-         TabIndex        =   57
+         TabIndex        =   56
          Top             =   3480
          Width           =   780
       End
@@ -2145,7 +2319,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   6
          Left            =   120
-         TabIndex        =   56
+         TabIndex        =   55
          Top             =   2880
          Width           =   540
       End
@@ -2167,7 +2341,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   5
          Left            =   120
-         TabIndex        =   55
+         TabIndex        =   54
          Top             =   2520
          Width           =   1260
       End
@@ -2189,7 +2363,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   4
          Left            =   120
-         TabIndex        =   54
+         TabIndex        =   53
          Top             =   2160
          Width           =   555
       End
@@ -2211,7 +2385,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   3
          Left            =   75
-         TabIndex        =   53
+         TabIndex        =   52
          Top             =   1800
          Width           =   855
       End
@@ -2233,7 +2407,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   2
          Left            =   120
-         TabIndex        =   52
+         TabIndex        =   51
          Top             =   1440
          Width           =   825
       End
@@ -2255,7 +2429,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   0
          Left            =   120
-         TabIndex        =   51
+         TabIndex        =   50
          Top             =   1080
          Width           =   480
       End
@@ -2277,7 +2451,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   1
          Left            =   120
-         TabIndex        =   43
+         TabIndex        =   42
          Top             =   240
          Width           =   825
       End
@@ -2296,7 +2470,7 @@ Begin VB.Form FrmClient
       Height          =   615
       Index           =   7
       Left            =   6960
-      TabIndex        =   42
+      TabIndex        =   41
       Top             =   7440
       Width           =   1455
    End
@@ -2314,7 +2488,7 @@ Begin VB.Form FrmClient
       Height          =   615
       Index           =   6
       Left            =   5760
-      TabIndex        =   41
+      TabIndex        =   40
       Top             =   7440
       Width           =   1215
    End
@@ -2332,7 +2506,7 @@ Begin VB.Form FrmClient
       Height          =   615
       Index           =   5
       Left            =   4440
-      TabIndex        =   39
+      TabIndex        =   38
       Top             =   7440
       Width           =   1335
    End
@@ -2352,7 +2526,7 @@ Begin VB.Form FrmClient
       Index           =   4
       Left            =   3360
       MaskColor       =   &H0000FFFF&
-      TabIndex        =   38
+      TabIndex        =   37
       Top             =   7440
       Width           =   1095
    End
@@ -2361,7 +2535,7 @@ Begin VB.Form FrmClient
       Height          =   615
       Index           =   3
       Left            =   2520
-      TabIndex        =   37
+      TabIndex        =   36
       Top             =   7440
       Width           =   855
    End
@@ -2370,7 +2544,7 @@ Begin VB.Form FrmClient
       Height          =   615
       Index           =   2
       Left            =   1680
-      TabIndex        =   36
+      TabIndex        =   35
       Top             =   7440
       Width           =   855
    End
@@ -2379,7 +2553,7 @@ Begin VB.Form FrmClient
       Height          =   615
       Index           =   1
       Left            =   840
-      TabIndex        =   35
+      TabIndex        =   34
       Top             =   7440
       Width           =   855
    End
@@ -2388,7 +2562,7 @@ Begin VB.Form FrmClient
       Height          =   615
       Index           =   0
       Left            =   0
-      TabIndex        =   34
+      TabIndex        =   33
       Top             =   7440
       Width           =   855
    End
@@ -2470,7 +2644,7 @@ Private Sub Form_Load()
             Case False
                 .rsDEcmdTableClient.MoveLast
             
-                intLastNumber = .rsDEcmdTableClient("CLIENTNUMERO") + 1
+                intLastNumber = .rsDEcmdTableClient("CliNum") + 1
                 
                 .rsDEcmdTableClient.MoveFirst
         End Select
@@ -2563,7 +2737,7 @@ Private Sub cmdButton_Click(Index As Integer)
                                                                   
                 strLastNumber = intLastNumber
                                   
-                .rsDEcmdTableClient("CLIENTNUMERO") = String(7 - Len(strLastNumber), "0") & strLastNumber
+                .rsDEcmdTableClient("CliNum") = String(7 - Len(strLastNumber), "0") & strLastNumber
                 
                 intLastNumber = intLastNumber + 1
                 
@@ -2640,12 +2814,12 @@ Private Sub cmdButton_Click(Index As Integer)
                 Next
             Case 9
                                         
-                .rsDEcmdSqlPassage.Filter = "[CLIENTNUMERO]=" & .rsDEcmdTableClient("CLIENTNUMERO")
+                .rsDEcmdSqlPassage.Filter = "[CliNum]=" & .rsDEcmdTableClient("CliNum")
                 
                 DRpassage.Show
             Case 10
                                         
-                .rsDEcmdSqlEcheancier.Filter = "[CLIENTNUMERO]=" & .rsDEcmdTableClient("CLIENTNUMERO")
+                .rsDEcmdSqlEcheancier.Filter = "[CliNum]=" & .rsDEcmdTableClient("CliNum")
                 
                 DREcheancier.Show
         End Select
@@ -2685,30 +2859,6 @@ Private Sub MaskEdBox10_Validate(Cancel As Boolean)
                 MsgBox "Vous devez saisir une date"
                 
                 MaskEdBox10.SetFocus
-        End Select
-End Sub
-
-'******************************************************************************
-'***    EVENEMENT:                                                                                    ***
-'******************************************************************************
-'***    FONCTION:                                                                                       ***
-'******************************************************************************
-'***    ENTREE:                                                                                          ***
-'***      Neant                                                                                             ***
-'***    SORTIE:                                                                                           ***
-'***      Neant                                                                                             ***
-'******************************************************************************
-Private Sub MaskEdBox11_Validate(Cancel As Boolean)
-        Select Case IsDate(MaskEdBox11)
-            Case True
-            
-            Case False
-            
-                 Cancel = True
-           
-                 MsgBox "Vous devez saisir une date"
-                                  
-                 MaskEdBox11.SetFocus
         End Select
 End Sub
 

@@ -1,11 +1,11 @@
 VERSION 5.00
 Begin {C0E45035-5775-11D0-B388-00A0C9055D8E} DEFacture 
-   ClientHeight    =   10290
+   ClientHeight    =   19965
    ClientLeft      =   1080
    ClientTop       =   1500
-   ClientWidth     =   9600
-   _ExtentX        =   16933
-   _ExtentY        =   18150
+   ClientWidth     =   28680
+   _ExtentX        =   50588
+   _ExtentY        =   35216
    FolderFlags     =   3
    TypeLibGuid     =   "{A5DC9AF5-9235-11D1-B067-00DD01144174}"
    TypeInfoGuid    =   "{A5DC9AF6-9235-11D1-B067-00DD01144174}"
@@ -25,301 +25,445 @@ Begin {C0E45035-5775-11D0-B388-00A0C9055D8E} DEFacture
    BeginProperty Recordset1 
       CommandName     =   "DEcmdTableClient"
       CommDispId      =   1002
-      RsDispId        =   1057
-      CommandText     =   "TABLECLIENT"
+      RsDispId        =   1071
+      CommandText     =   $"DEFacture.dsx":00C5
       ActiveConnectionName=   "DEconFacture"
-      CommandType     =   2
-      dbObjectType    =   1
+      CommandType     =   1
       Locktype        =   3
+      Expanded        =   -1  'True
       IsRSReturning   =   -1  'True
-      NumFields       =   36
+      NumFields       =   54
       BeginProperty Field1 
-         Precision       =   0
-         Size            =   50
+         Precision       =   10
+         Size            =   4
          Scale           =   0
-         Type            =   202
-         Name            =   "CLIENTNUMERO"
-         Caption         =   "CLIENTNUMERO"
+         Type            =   3
+         Name            =   "CliNum"
+         Caption         =   "CliNum"
       EndProperty
       BeginProperty Field2 
          Precision       =   0
-         Size            =   20
+         Size            =   6
          Scale           =   0
          Type            =   202
-         Name            =   "UTILISATEURNOM"
-         Caption         =   "UTILISATEURNOM"
+         Name            =   "CliCode"
+         Caption         =   "CliCode"
       EndProperty
       BeginProperty Field3 
          Precision       =   0
-         Size            =   20
+         Size            =   8
          Scale           =   0
-         Type            =   202
-         Name            =   "UTILISATEURPRENOM"
-         Caption         =   "UTILISATEURPRENOM"
+         Type            =   7
+         Name            =   "CliDateCre"
+         Caption         =   "CliDateCre"
       EndProperty
       BeginProperty Field4 
          Precision       =   0
-         Size            =   255
+         Size            =   8
          Scale           =   0
-         Type            =   202
-         Name            =   "UTILISATEURADRESSE"
-         Caption         =   "UTILISATEURADRESSE"
+         Type            =   7
+         Name            =   "CliDateMaj"
+         Caption         =   "CliDateMaj"
       EndProperty
       BeginProperty Field5 
          Precision       =   0
-         Size            =   20
+         Size            =   5
          Scale           =   0
          Type            =   202
-         Name            =   "UTILISATEURVILLE"
-         Caption         =   "UTILISATEURVILLE"
+         Name            =   "CliCivCode"
+         Caption         =   "CliCivCode"
       EndProperty
       BeginProperty Field6 
          Precision       =   0
-         Size            =   5
+         Size            =   20
          Scale           =   0
          Type            =   202
-         Name            =   "UTILISATEURCODEPOSTAL"
-         Caption         =   "UTILISATEURCODEPOSTAL"
+         Name            =   "CliNom"
+         Caption         =   "CliNom"
       EndProperty
       BeginProperty Field7 
          Precision       =   0
-         Size            =   255
+         Size            =   20
          Scale           =   0
          Type            =   202
-         Name            =   "UTILISATEURNOTE"
-         Caption         =   "UTILISATEURNOTE"
+         Name            =   "CliPrenom"
+         Caption         =   "CliPrenom"
       EndProperty
       BeginProperty Field8 
          Precision       =   0
-         Size            =   10
-         Scale           =   0
-         Type            =   202
-         Name            =   "UTILISATEURTELEPHONEBUREAU"
-         Caption         =   "UTILISATEURTELEPHONEBUREAU"
-      EndProperty
-      BeginProperty Field9 
-         Precision       =   0
-         Size            =   10
-         Scale           =   0
-         Type            =   202
-         Name            =   "UTILISATEURTELEPHONEMAISON"
-         Caption         =   "UTILISATEURTELEPHONEMAISON"
-      EndProperty
-      BeginProperty Field10 
-         Precision       =   0
-         Size            =   20
-         Scale           =   0
-         Type            =   202
-         Name            =   "SOUSCRIPTEURNOM"
-         Caption         =   "SOUSCRIPTEURNOM"
-      EndProperty
-      BeginProperty Field11 
-         Precision       =   0
-         Size            =   20
-         Scale           =   0
-         Type            =   202
-         Name            =   "SOUSCRIPTEURPRENOM"
-         Caption         =   "SOUSCRIPTEURPRENOM"
-      EndProperty
-      BeginProperty Field12 
-         Precision       =   0
          Size            =   255
          Scale           =   0
          Type            =   202
-         Name            =   "SOUSCRIPTEURADRESSE"
-         Caption         =   "SOUSCRIPTEURADRESSE"
+         Name            =   "CliAdresse"
+         Caption         =   "CliAdresse"
+      EndProperty
+      BeginProperty Field9 
+         Precision       =   10
+         Size            =   4
+         Scale           =   0
+         Type            =   3
+         Name            =   "CliVilNum"
+         Caption         =   "CliVilNum"
+      EndProperty
+      BeginProperty Field10 
+         Precision       =   0
+         Size            =   536870910
+         Scale           =   0
+         Type            =   203
+         Name            =   "CliNote"
+         Caption         =   "CliNote"
+      EndProperty
+      BeginProperty Field11 
+         Precision       =   0
+         Size            =   50
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliTel1Libelle"
+         Caption         =   "CliTel1Libelle"
+      EndProperty
+      BeginProperty Field12 
+         Precision       =   0
+         Size            =   10
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliTel1"
+         Caption         =   "CliTel1"
       EndProperty
       BeginProperty Field13 
          Precision       =   0
-         Size            =   20
+         Size            =   50
          Scale           =   0
          Type            =   202
-         Name            =   "SOUSCRIPTEURVILLE"
-         Caption         =   "SOUSCRIPTEURVILLE"
+         Name            =   "CliTel2Libelle"
+         Caption         =   "CliTel2Libelle"
       EndProperty
       BeginProperty Field14 
+         Precision       =   0
+         Size            =   10
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliTel2"
+         Caption         =   "CliTel2"
+      EndProperty
+      BeginProperty Field15 
+         Precision       =   0
+         Size            =   10
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliBatiment"
+         Caption         =   "CliBatiment"
+      EndProperty
+      BeginProperty Field16 
+         Precision       =   5
+         Size            =   2
+         Scale           =   0
+         Type            =   2
+         Name            =   "CliEscalier"
+         Caption         =   "CliEscalier"
+      EndProperty
+      BeginProperty Field17 
          Precision       =   0
          Size            =   5
          Scale           =   0
          Type            =   202
-         Name            =   "SOUSCRIPTEURCODEPOSTAL"
-         Caption         =   "SOUSCRIPTEURCODEPOSTAL"
+         Name            =   "CliEtage"
+         Caption         =   "CliEtage"
       EndProperty
-      BeginProperty Field15 
+      BeginProperty Field18 
+         Precision       =   0
+         Size            =   10
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliPorte"
+         Caption         =   "CliPorte"
+      EndProperty
+      BeginProperty Field19 
+         Precision       =   0
+         Size            =   20
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliDigicode"
+         Caption         =   "CliDigicode"
+      EndProperty
+      BeginProperty Field20 
+         Precision       =   0
+         Size            =   5
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliSousCivCode"
+         Caption         =   "CliSousCivCode"
+      EndProperty
+      BeginProperty Field21 
+         Precision       =   0
+         Size            =   20
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliSousNom"
+         Caption         =   "CliSousNom"
+      EndProperty
+      BeginProperty Field22 
+         Precision       =   0
+         Size            =   20
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliSousPrenom"
+         Caption         =   "CliSousPrenom"
+      EndProperty
+      BeginProperty Field23 
          Precision       =   0
          Size            =   255
          Scale           =   0
          Type            =   202
-         Name            =   "SOUSCRIPTEURNOTE"
-         Caption         =   "SOUSCRIPTEURNOTE"
-      EndProperty
-      BeginProperty Field16 
-         Precision       =   0
-         Size            =   10
-         Scale           =   0
-         Type            =   202
-         Name            =   "SOUSCRIPTEURTELEPHONEBUREAU"
-         Caption         =   "SOUSCRIPTEURTELEPHONEBUREAU"
-      EndProperty
-      BeginProperty Field17 
-         Precision       =   0
-         Size            =   10
-         Scale           =   0
-         Type            =   202
-         Name            =   "SOUSCRIPTEURTELEPHONEMAISON"
-         Caption         =   "SOUSCRIPTEURTELEPHONEMAISON"
-      EndProperty
-      BeginProperty Field18 
-         Precision       =   0
-         Size            =   50
-         Scale           =   0
-         Type            =   202
-         Name            =   "CLIENTBATIMENT"
-         Caption         =   "CLIENTBATIMENT"
-      EndProperty
-      BeginProperty Field19 
-         Precision       =   0
-         Size            =   50
-         Scale           =   0
-         Type            =   202
-         Name            =   "CLIENTESC"
-         Caption         =   "CLIENTESC"
-      EndProperty
-      BeginProperty Field20 
-         Precision       =   0
-         Size            =   50
-         Scale           =   0
-         Type            =   202
-         Name            =   "CLIENTETAGE"
-         Caption         =   "CLIENTETAGE"
-      EndProperty
-      BeginProperty Field21 
-         Precision       =   0
-         Size            =   50
-         Scale           =   0
-         Type            =   202
-         Name            =   "CLIENTPORTE"
-         Caption         =   "CLIENTPORTE"
-      EndProperty
-      BeginProperty Field22 
-         Precision       =   0
-         Size            =   50
-         Scale           =   0
-         Type            =   202
-         Name            =   "CLIENTDIGICODE"
-         Caption         =   "CLIENTDIGICODE"
-      EndProperty
-      BeginProperty Field23 
-         Precision       =   0
-         Size            =   7
-         Scale           =   0
-         Type            =   202
-         Name            =   "CHAUDIERENUMERO"
-         Caption         =   "CHAUDIERENUMERO"
+         Name            =   "CliSousAdresse"
+         Caption         =   "CliSousAdresse"
       EndProperty
       BeginProperty Field24 
-         Precision       =   0
-         Size            =   50
+         Precision       =   10
+         Size            =   4
          Scale           =   0
-         Type            =   202
-         Name            =   "CHAUDIEREGAZ"
-         Caption         =   "CHAUDIEREGAZ"
+         Type            =   3
+         Name            =   "CliSousVilNum"
+         Caption         =   "CliSousVilNum"
       EndProperty
       BeginProperty Field25 
          Precision       =   0
-         Size            =   50
+         Size            =   536870910
          Scale           =   0
-         Type            =   202
-         Name            =   "CHAUDIERETYPE"
-         Caption         =   "CHAUDIERETYPE"
+         Type            =   203
+         Name            =   "CliSousNote"
+         Caption         =   "CliSousNote"
       EndProperty
       BeginProperty Field26 
          Precision       =   0
-         Size            =   50
+         Size            =   10
          Scale           =   0
          Type            =   202
-         Name            =   "CHAUDIEREPUISSANCE"
-         Caption         =   "CHAUDIEREPUISSANCE"
+         Name            =   "CliSousTel1"
+         Caption         =   "CliSousTel1"
       EndProperty
       BeginProperty Field27 
          Precision       =   0
          Size            =   50
          Scale           =   0
          Type            =   202
-         Name            =   "CHAUDIEREMARQUE"
-         Caption         =   "CHAUDIEREMARQUE"
+         Name            =   "CliSousTel1Libelle"
+         Caption         =   "CliSousTel1Libelle"
       EndProperty
       BeginProperty Field28 
          Precision       =   0
-         Size            =   50
+         Size            =   10
          Scale           =   0
          Type            =   202
-         Name            =   "CONTRATTYPE"
-         Caption         =   "CONTRATTYPE"
+         Name            =   "CliSousTel2"
+         Caption         =   "CliSousTel2"
       EndProperty
       BeginProperty Field29 
-         Precision       =   15
-         Size            =   8
-         Scale           =   0
-         Type            =   5
-         Name            =   "CONTRATCOEFFICIENT"
-         Caption         =   "CONTRATCOEFFICIENT"
-      EndProperty
-      BeginProperty Field30 
-         Precision       =   0
-         Size            =   8
-         Scale           =   0
-         Type            =   7
-         Name            =   "CONTRATPAIEMENT"
-         Caption         =   "CONTRATPAIEMENT"
-      EndProperty
-      BeginProperty Field31 
          Precision       =   0
          Size            =   50
          Scale           =   0
          Type            =   202
-         Name            =   "CONTRATCATEGORIE"
-         Caption         =   "CONTRATCATEGORIE"
+         Name            =   "CliSousTel2Libelle"
+         Caption         =   "CliSousTel2Libelle"
+      EndProperty
+      BeginProperty Field30 
+         Precision       =   10
+         Size            =   4
+         Scale           =   0
+         Type            =   3
+         Name            =   "CliChdNum"
+         Caption         =   "CliChdNum"
+      EndProperty
+      BeginProperty Field31 
+         Precision       =   10
+         Size            =   4
+         Scale           =   0
+         Type            =   3
+         Name            =   "CliChdCliNum"
+         Caption         =   "CliChdCliNum"
       EndProperty
       BeginProperty Field32 
-         Precision       =   15
-         Size            =   8
+         Precision       =   0
+         Size            =   14
          Scale           =   0
-         Type            =   5
-         Name            =   "CONTRATTVA"
-         Caption         =   "CONTRATTVA"
+         Type            =   202
+         Name            =   "CliChdRef"
+         Caption         =   "CliChdRef"
       EndProperty
       BeginProperty Field33 
          Precision       =   0
          Size            =   8
          Scale           =   0
          Type            =   7
-         Name            =   "CONTRATDEBUT"
-         Caption         =   "CONTRATDEBUT"
+         Name            =   "CliChdDateServ"
+         Caption         =   "CliChdDateServ"
       EndProperty
       BeginProperty Field34 
          Precision       =   0
-         Size            =   8
+         Size            =   20
          Scale           =   0
-         Type            =   7
-         Name            =   "CONTRATFIN"
-         Caption         =   "CONTRATFIN"
+         Type            =   202
+         Name            =   "CliChdGaz"
+         Caption         =   "CliChdGaz"
       EndProperty
       BeginProperty Field35 
+         Precision       =   0
+         Size            =   20
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliChdIdentification"
+         Caption         =   "CliChdIdentification"
+      EndProperty
+      BeginProperty Field36 
+         Precision       =   0
+         Size            =   20
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliChdMarque"
+         Caption         =   "CliChdMarque"
+      EndProperty
+      BeginProperty Field37 
+         Precision       =   10
+         Size            =   4
+         Scale           =   0
+         Type            =   3
+         Name            =   "CliChdPuissance"
+         Caption         =   "CliChdPuissance"
+      EndProperty
+      BeginProperty Field38 
+         Precision       =   0
+         Size            =   536870910
+         Scale           =   0
+         Type            =   203
+         Name            =   "CliChdRemarque"
+         Caption         =   "CliChdRemarque"
+      EndProperty
+      BeginProperty Field39 
+         Precision       =   0
+         Size            =   2
+         Scale           =   0
+         Type            =   11
+         Name            =   "CliChdActif"
+         Caption         =   "CliChdActif"
+      EndProperty
+      BeginProperty Field40 
+         Precision       =   10
+         Size            =   4
+         Scale           =   0
+         Type            =   3
+         Name            =   "CliConNum"
+         Caption         =   "CliConNum"
+      EndProperty
+      BeginProperty Field41 
+         Precision       =   10
+         Size            =   4
+         Scale           =   0
+         Type            =   3
+         Name            =   "CliConCliNum"
+         Caption         =   "CliConCliNum"
+      EndProperty
+      BeginProperty Field42 
          Precision       =   0
          Size            =   8
          Scale           =   0
          Type            =   7
-         Name            =   "CONTRATV1"
-         Caption         =   "CONTRATV1"
+         Name            =   "CliConDateDebut"
+         Caption         =   "CliConDateDebut"
       EndProperty
-      BeginProperty Field36 
+      BeginProperty Field43 
+         Precision       =   0
+         Size            =   8
+         Scale           =   0
+         Type            =   7
+         Name            =   "CliConDateFin"
+         Caption         =   "CliConDateFin"
+      EndProperty
+      BeginProperty Field44 
+         Precision       =   0
+         Size            =   8
+         Scale           =   0
+         Type            =   7
+         Name            =   "CliConDatePaiment"
+         Caption         =   "CliConDatePaiment"
+      EndProperty
+      BeginProperty Field45 
+         Precision       =   0
+         Size            =   50
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliConType"
+         Caption         =   "CliConType"
+      EndProperty
+      BeginProperty Field46 
+         Precision       =   7
+         Size            =   4
+         Scale           =   0
+         Type            =   4
+         Name            =   "CliConCoefficient"
+         Caption         =   "CliConCoefficient"
+      EndProperty
+      BeginProperty Field47 
          Precision       =   19
          Size            =   8
          Scale           =   0
          Type            =   6
-         Name            =   "CONTRATPRIX"
-         Caption         =   "CONTRATPRIX"
+         Name            =   "CliConPrixHT"
+         Caption         =   "CliConPrixHT"
+      EndProperty
+      BeginProperty Field48 
+         Precision       =   19
+         Size            =   8
+         Scale           =   0
+         Type            =   6
+         Name            =   "CliConTVA"
+         Caption         =   "CliConTVA"
+      EndProperty
+      BeginProperty Field49 
+         Precision       =   19
+         Size            =   8
+         Scale           =   0
+         Type            =   6
+         Name            =   "CliConPrix"
+         Caption         =   "CliConPrix"
+      EndProperty
+      BeginProperty Field50 
+         Precision       =   0
+         Size            =   2
+         Scale           =   0
+         Type            =   11
+         Name            =   "CliConActif"
+         Caption         =   "CliConActif"
+      EndProperty
+      BeginProperty Field51 
+         Precision       =   0
+         Size            =   50
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliVilNom"
+         Caption         =   "CliVilNom"
+      EndProperty
+      BeginProperty Field52 
+         Precision       =   0
+         Size            =   5
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliVilCodePostal"
+         Caption         =   "CliVilCodePostal"
+      EndProperty
+      BeginProperty Field53 
+         Precision       =   0
+         Size            =   50
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliSousVilNom"
+         Caption         =   "CliSousVilNom"
+      EndProperty
+      BeginProperty Field54 
+         Precision       =   0
+         Size            =   5
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliSousVilCodePostal"
+         Caption         =   "CliSousVilCodePostal"
       EndProperty
       NumGroups       =   0
       ParamCount      =   0
@@ -329,300 +473,332 @@ Begin {C0E45035-5775-11D0-B388-00A0C9055D8E} DEFacture
    BeginProperty Recordset2 
       CommandName     =   "DEcmdSqlClientContrat"
       CommDispId      =   1028
-      RsDispId        =   1054
-      CommandText     =   "TABLECLIENT"
+      RsDispId        =   1063
+      CommandText     =   $"DEFacture.dsx":0332
       ActiveConnectionName=   "DEconFacture"
-      CommandType     =   2
-      dbObjectType    =   1
+      CommandType     =   1
+      Expanded        =   -1  'True
       IsRSReturning   =   -1  'True
-      NumFields       =   36
+      NumFields       =   40
       BeginProperty Field1 
-         Precision       =   0
-         Size            =   50
+         Precision       =   10
+         Size            =   4
          Scale           =   0
-         Type            =   202
-         Name            =   "CLIENTNUMERO"
-         Caption         =   "CLIENTNUMERO"
+         Type            =   3
+         Name            =   "CliConNum"
+         Caption         =   "CliConNum"
       EndProperty
       BeginProperty Field2 
-         Precision       =   0
-         Size            =   20
+         Precision       =   10
+         Size            =   4
          Scale           =   0
-         Type            =   202
-         Name            =   "UTILISATEURNOM"
-         Caption         =   "UTILISATEURNOM"
+         Type            =   3
+         Name            =   "CliConCliNum"
+         Caption         =   "CliConCliNum"
       EndProperty
       BeginProperty Field3 
          Precision       =   0
-         Size            =   20
+         Size            =   8
          Scale           =   0
-         Type            =   202
-         Name            =   "UTILISATEURPRENOM"
-         Caption         =   "UTILISATEURPRENOM"
+         Type            =   7
+         Name            =   "CliConDateDebut"
+         Caption         =   "CliConDateDebut"
       EndProperty
       BeginProperty Field4 
          Precision       =   0
-         Size            =   255
+         Size            =   8
          Scale           =   0
-         Type            =   202
-         Name            =   "UTILISATEURADRESSE"
-         Caption         =   "UTILISATEURADRESSE"
+         Type            =   7
+         Name            =   "CliConDateFin"
+         Caption         =   "CliConDateFin"
       EndProperty
       BeginProperty Field5 
          Precision       =   0
-         Size            =   20
+         Size            =   8
          Scale           =   0
-         Type            =   202
-         Name            =   "UTILISATEURVILLE"
-         Caption         =   "UTILISATEURVILLE"
+         Type            =   7
+         Name            =   "CliConDatePaiment"
+         Caption         =   "CliConDatePaiment"
       EndProperty
       BeginProperty Field6 
          Precision       =   0
-         Size            =   5
+         Size            =   50
          Scale           =   0
          Type            =   202
-         Name            =   "UTILISATEURCODEPOSTAL"
-         Caption         =   "UTILISATEURCODEPOSTAL"
+         Name            =   "CliConType"
+         Caption         =   "CliConType"
       EndProperty
       BeginProperty Field7 
-         Precision       =   0
-         Size            =   255
+         Precision       =   7
+         Size            =   4
          Scale           =   0
-         Type            =   202
-         Name            =   "UTILISATEURNOTE"
-         Caption         =   "UTILISATEURNOTE"
+         Type            =   4
+         Name            =   "CliConCoefficient"
+         Caption         =   "CliConCoefficient"
       EndProperty
       BeginProperty Field8 
-         Precision       =   0
-         Size            =   10
+         Precision       =   19
+         Size            =   8
          Scale           =   0
-         Type            =   202
-         Name            =   "UTILISATEURTELEPHONEBUREAU"
-         Caption         =   "UTILISATEURTELEPHONEBUREAU"
+         Type            =   6
+         Name            =   "CliConPrixHT"
+         Caption         =   "CliConPrixHT"
       EndProperty
       BeginProperty Field9 
-         Precision       =   0
-         Size            =   10
+         Precision       =   19
+         Size            =   8
          Scale           =   0
-         Type            =   202
-         Name            =   "UTILISATEURTELEPHONEMAISON"
-         Caption         =   "UTILISATEURTELEPHONEMAISON"
+         Type            =   6
+         Name            =   "CliConTVA"
+         Caption         =   "CliConTVA"
       EndProperty
       BeginProperty Field10 
-         Precision       =   0
-         Size            =   20
+         Precision       =   19
+         Size            =   8
          Scale           =   0
-         Type            =   202
-         Name            =   "SOUSCRIPTEURNOM"
-         Caption         =   "SOUSCRIPTEURNOM"
+         Type            =   6
+         Name            =   "CliConPrix"
+         Caption         =   "CliConPrix"
       EndProperty
       BeginProperty Field11 
          Precision       =   0
-         Size            =   20
+         Size            =   2
          Scale           =   0
-         Type            =   202
-         Name            =   "SOUSCRIPTEURPRENOM"
-         Caption         =   "SOUSCRIPTEURPRENOM"
+         Type            =   11
+         Name            =   "CliConActif"
+         Caption         =   "CliConActif"
       EndProperty
       BeginProperty Field12 
-         Precision       =   0
-         Size            =   255
+         Precision       =   10
+         Size            =   4
          Scale           =   0
-         Type            =   202
-         Name            =   "SOUSCRIPTEURADRESSE"
-         Caption         =   "SOUSCRIPTEURADRESSE"
+         Type            =   3
+         Name            =   "CliNum"
+         Caption         =   "CliNum"
       EndProperty
       BeginProperty Field13 
          Precision       =   0
-         Size            =   20
+         Size            =   6
          Scale           =   0
          Type            =   202
-         Name            =   "SOUSCRIPTEURVILLE"
-         Caption         =   "SOUSCRIPTEURVILLE"
+         Name            =   "CliCode"
+         Caption         =   "CliCode"
       EndProperty
       BeginProperty Field14 
+         Precision       =   0
+         Size            =   8
+         Scale           =   0
+         Type            =   7
+         Name            =   "CliDateCre"
+         Caption         =   "CliDateCre"
+      EndProperty
+      BeginProperty Field15 
+         Precision       =   0
+         Size            =   8
+         Scale           =   0
+         Type            =   7
+         Name            =   "CliDateMaj"
+         Caption         =   "CliDateMaj"
+      EndProperty
+      BeginProperty Field16 
          Precision       =   0
          Size            =   5
          Scale           =   0
          Type            =   202
-         Name            =   "SOUSCRIPTEURCODEPOSTAL"
-         Caption         =   "SOUSCRIPTEURCODEPOSTAL"
+         Name            =   "CliCivCode"
+         Caption         =   "CliCivCode"
       EndProperty
-      BeginProperty Field15 
+      BeginProperty Field17 
+         Precision       =   0
+         Size            =   20
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliNom"
+         Caption         =   "CliNom"
+      EndProperty
+      BeginProperty Field18 
+         Precision       =   0
+         Size            =   20
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliPrenom"
+         Caption         =   "CliPrenom"
+      EndProperty
+      BeginProperty Field19 
          Precision       =   0
          Size            =   255
          Scale           =   0
          Type            =   202
-         Name            =   "SOUSCRIPTEURNOTE"
-         Caption         =   "SOUSCRIPTEURNOTE"
-      EndProperty
-      BeginProperty Field16 
-         Precision       =   0
-         Size            =   10
-         Scale           =   0
-         Type            =   202
-         Name            =   "SOUSCRIPTEURTELEPHONEBUREAU"
-         Caption         =   "SOUSCRIPTEURTELEPHONEBUREAU"
-      EndProperty
-      BeginProperty Field17 
-         Precision       =   0
-         Size            =   10
-         Scale           =   0
-         Type            =   202
-         Name            =   "SOUSCRIPTEURTELEPHONEMAISON"
-         Caption         =   "SOUSCRIPTEURTELEPHONEMAISON"
-      EndProperty
-      BeginProperty Field18 
-         Precision       =   0
-         Size            =   50
-         Scale           =   0
-         Type            =   202
-         Name            =   "CLIENTBATIMENT"
-         Caption         =   "CLIENTBATIMENT"
-      EndProperty
-      BeginProperty Field19 
-         Precision       =   0
-         Size            =   50
-         Scale           =   0
-         Type            =   202
-         Name            =   "CLIENTESC"
-         Caption         =   "CLIENTESC"
+         Name            =   "CliAdresse"
+         Caption         =   "CliAdresse"
       EndProperty
       BeginProperty Field20 
-         Precision       =   0
-         Size            =   50
+         Precision       =   10
+         Size            =   4
          Scale           =   0
-         Type            =   202
-         Name            =   "CLIENTETAGE"
-         Caption         =   "CLIENTETAGE"
+         Type            =   3
+         Name            =   "CliVilNum"
+         Caption         =   "CliVilNum"
       EndProperty
       BeginProperty Field21 
          Precision       =   0
-         Size            =   50
+         Size            =   536870910
          Scale           =   0
-         Type            =   202
-         Name            =   "CLIENTPORTE"
-         Caption         =   "CLIENTPORTE"
+         Type            =   203
+         Name            =   "CliNote"
+         Caption         =   "CliNote"
       EndProperty
       BeginProperty Field22 
          Precision       =   0
          Size            =   50
          Scale           =   0
          Type            =   202
-         Name            =   "CLIENTDIGICODE"
-         Caption         =   "CLIENTDIGICODE"
+         Name            =   "CliTel1Libelle"
+         Caption         =   "CliTel1Libelle"
       EndProperty
       BeginProperty Field23 
          Precision       =   0
-         Size            =   7
+         Size            =   10
          Scale           =   0
          Type            =   202
-         Name            =   "CHAUDIERENUMERO"
-         Caption         =   "CHAUDIERENUMERO"
+         Name            =   "CliTel1"
+         Caption         =   "CliTel1"
       EndProperty
       BeginProperty Field24 
          Precision       =   0
          Size            =   50
          Scale           =   0
          Type            =   202
-         Name            =   "CHAUDIEREGAZ"
-         Caption         =   "CHAUDIEREGAZ"
+         Name            =   "CliTel2Libelle"
+         Caption         =   "CliTel2Libelle"
       EndProperty
       BeginProperty Field25 
          Precision       =   0
-         Size            =   50
+         Size            =   10
          Scale           =   0
          Type            =   202
-         Name            =   "CHAUDIERETYPE"
-         Caption         =   "CHAUDIERETYPE"
+         Name            =   "CliTel2"
+         Caption         =   "CliTel2"
       EndProperty
       BeginProperty Field26 
          Precision       =   0
-         Size            =   50
+         Size            =   10
          Scale           =   0
          Type            =   202
-         Name            =   "CHAUDIEREPUISSANCE"
-         Caption         =   "CHAUDIEREPUISSANCE"
+         Name            =   "CliBatiment"
+         Caption         =   "CliBatiment"
       EndProperty
       BeginProperty Field27 
-         Precision       =   0
-         Size            =   50
+         Precision       =   5
+         Size            =   2
          Scale           =   0
-         Type            =   202
-         Name            =   "CHAUDIEREMARQUE"
-         Caption         =   "CHAUDIEREMARQUE"
+         Type            =   2
+         Name            =   "CliEscalier"
+         Caption         =   "CliEscalier"
       EndProperty
       BeginProperty Field28 
          Precision       =   0
-         Size            =   50
+         Size            =   5
          Scale           =   0
          Type            =   202
-         Name            =   "CONTRATTYPE"
-         Caption         =   "CONTRATTYPE"
+         Name            =   "CliEtage"
+         Caption         =   "CliEtage"
       EndProperty
       BeginProperty Field29 
-         Precision       =   15
-         Size            =   8
+         Precision       =   0
+         Size            =   10
          Scale           =   0
-         Type            =   5
-         Name            =   "CONTRATCOEFFICIENT"
-         Caption         =   "CONTRATCOEFFICIENT"
+         Type            =   202
+         Name            =   "CliPorte"
+         Caption         =   "CliPorte"
       EndProperty
       BeginProperty Field30 
          Precision       =   0
-         Size            =   8
+         Size            =   20
          Scale           =   0
-         Type            =   7
-         Name            =   "CONTRATPAIEMENT"
-         Caption         =   "CONTRATPAIEMENT"
+         Type            =   202
+         Name            =   "CliDigicode"
+         Caption         =   "CliDigicode"
       EndProperty
       BeginProperty Field31 
+         Precision       =   0
+         Size            =   5
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliSousCivCode"
+         Caption         =   "CliSousCivCode"
+      EndProperty
+      BeginProperty Field32 
+         Precision       =   0
+         Size            =   20
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliSousNom"
+         Caption         =   "CliSousNom"
+      EndProperty
+      BeginProperty Field33 
+         Precision       =   0
+         Size            =   20
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliSousPrenom"
+         Caption         =   "CliSousPrenom"
+      EndProperty
+      BeginProperty Field34 
+         Precision       =   0
+         Size            =   255
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliSousAdresse"
+         Caption         =   "CliSousAdresse"
+      EndProperty
+      BeginProperty Field35 
+         Precision       =   10
+         Size            =   4
+         Scale           =   0
+         Type            =   3
+         Name            =   "CliSousVilNum"
+         Caption         =   "CliSousVilNum"
+      EndProperty
+      BeginProperty Field36 
+         Precision       =   0
+         Size            =   536870910
+         Scale           =   0
+         Type            =   203
+         Name            =   "CliSousNote"
+         Caption         =   "CliSousNote"
+      EndProperty
+      BeginProperty Field37 
+         Precision       =   0
+         Size            =   10
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliSousTel1"
+         Caption         =   "CliSousTel1"
+      EndProperty
+      BeginProperty Field38 
          Precision       =   0
          Size            =   50
          Scale           =   0
          Type            =   202
-         Name            =   "CONTRATCATEGORIE"
-         Caption         =   "CONTRATCATEGORIE"
+         Name            =   "CliSousTel1Libelle"
+         Caption         =   "CliSousTel1Libelle"
       EndProperty
-      BeginProperty Field32 
-         Precision       =   15
-         Size            =   8
-         Scale           =   0
-         Type            =   5
-         Name            =   "CONTRATTVA"
-         Caption         =   "CONTRATTVA"
-      EndProperty
-      BeginProperty Field33 
+      BeginProperty Field39 
          Precision       =   0
-         Size            =   8
+         Size            =   10
          Scale           =   0
-         Type            =   7
-         Name            =   "CONTRATDEBUT"
-         Caption         =   "CONTRATDEBUT"
+         Type            =   202
+         Name            =   "CliSousTel2"
+         Caption         =   "CliSousTel2"
       EndProperty
-      BeginProperty Field34 
+      BeginProperty Field40 
          Precision       =   0
-         Size            =   8
+         Size            =   50
          Scale           =   0
-         Type            =   7
-         Name            =   "CONTRATFIN"
-         Caption         =   "CONTRATFIN"
-      EndProperty
-      BeginProperty Field35 
-         Precision       =   0
-         Size            =   8
-         Scale           =   0
-         Type            =   7
-         Name            =   "CONTRATV1"
-         Caption         =   "CONTRATV1"
-      EndProperty
-      BeginProperty Field36 
-         Precision       =   19
-         Size            =   8
-         Scale           =   0
-         Type            =   6
-         Name            =   "CONTRATPRIX"
-         Caption         =   "CONTRATPRIX"
+         Type            =   202
+         Name            =   "CliSousTel2Libelle"
+         Caption         =   "CliSousTel2Libelle"
       EndProperty
       NumGroups       =   0
       ParamCount      =   0
@@ -632,300 +808,364 @@ Begin {C0E45035-5775-11D0-B388-00A0C9055D8E} DEFacture
    BeginProperty Recordset3 
       CommandName     =   "DEcmdSqlClientV1"
       CommDispId      =   1033
-      RsDispId        =   1055
-      CommandText     =   "TABLECLIENT"
+      RsDispId        =   1066
+      CommandText     =   $"DEFacture.dsx":03BD
       ActiveConnectionName=   "DEconFacture"
-      CommandType     =   2
-      dbObjectType    =   1
+      CommandType     =   1
+      Expanded        =   -1  'True
       IsRSReturning   =   -1  'True
-      NumFields       =   36
+      NumFields       =   44
       BeginProperty Field1 
-         Precision       =   0
-         Size            =   50
+         Precision       =   10
+         Size            =   4
          Scale           =   0
-         Type            =   202
-         Name            =   "CLIENTNUMERO"
-         Caption         =   "CLIENTNUMERO"
+         Type            =   3
+         Name            =   "CliNum"
+         Caption         =   "CliNum"
       EndProperty
       BeginProperty Field2 
          Precision       =   0
-         Size            =   20
+         Size            =   6
          Scale           =   0
          Type            =   202
-         Name            =   "UTILISATEURNOM"
-         Caption         =   "UTILISATEURNOM"
+         Name            =   "CliCode"
+         Caption         =   "CliCode"
       EndProperty
       BeginProperty Field3 
          Precision       =   0
-         Size            =   20
+         Size            =   8
          Scale           =   0
-         Type            =   202
-         Name            =   "UTILISATEURPRENOM"
-         Caption         =   "UTILISATEURPRENOM"
+         Type            =   7
+         Name            =   "CliDateCre"
+         Caption         =   "CliDateCre"
       EndProperty
       BeginProperty Field4 
          Precision       =   0
-         Size            =   255
+         Size            =   8
          Scale           =   0
-         Type            =   202
-         Name            =   "UTILISATEURADRESSE"
-         Caption         =   "UTILISATEURADRESSE"
+         Type            =   7
+         Name            =   "CliDateMaj"
+         Caption         =   "CliDateMaj"
       EndProperty
       BeginProperty Field5 
          Precision       =   0
-         Size            =   20
+         Size            =   5
          Scale           =   0
          Type            =   202
-         Name            =   "UTILISATEURVILLE"
-         Caption         =   "UTILISATEURVILLE"
+         Name            =   "CliCivCode"
+         Caption         =   "CliCivCode"
       EndProperty
       BeginProperty Field6 
          Precision       =   0
-         Size            =   5
+         Size            =   20
          Scale           =   0
          Type            =   202
-         Name            =   "UTILISATEURCODEPOSTAL"
-         Caption         =   "UTILISATEURCODEPOSTAL"
+         Name            =   "CliNom"
+         Caption         =   "CliNom"
       EndProperty
       BeginProperty Field7 
          Precision       =   0
-         Size            =   255
+         Size            =   20
          Scale           =   0
          Type            =   202
-         Name            =   "UTILISATEURNOTE"
-         Caption         =   "UTILISATEURNOTE"
+         Name            =   "CliPrenom"
+         Caption         =   "CliPrenom"
       EndProperty
       BeginProperty Field8 
          Precision       =   0
-         Size            =   10
-         Scale           =   0
-         Type            =   202
-         Name            =   "UTILISATEURTELEPHONEBUREAU"
-         Caption         =   "UTILISATEURTELEPHONEBUREAU"
-      EndProperty
-      BeginProperty Field9 
-         Precision       =   0
-         Size            =   10
-         Scale           =   0
-         Type            =   202
-         Name            =   "UTILISATEURTELEPHONEMAISON"
-         Caption         =   "UTILISATEURTELEPHONEMAISON"
-      EndProperty
-      BeginProperty Field10 
-         Precision       =   0
-         Size            =   20
-         Scale           =   0
-         Type            =   202
-         Name            =   "SOUSCRIPTEURNOM"
-         Caption         =   "SOUSCRIPTEURNOM"
-      EndProperty
-      BeginProperty Field11 
-         Precision       =   0
-         Size            =   20
-         Scale           =   0
-         Type            =   202
-         Name            =   "SOUSCRIPTEURPRENOM"
-         Caption         =   "SOUSCRIPTEURPRENOM"
-      EndProperty
-      BeginProperty Field12 
-         Precision       =   0
          Size            =   255
          Scale           =   0
          Type            =   202
-         Name            =   "SOUSCRIPTEURADRESSE"
-         Caption         =   "SOUSCRIPTEURADRESSE"
+         Name            =   "CliAdresse"
+         Caption         =   "CliAdresse"
+      EndProperty
+      BeginProperty Field9 
+         Precision       =   10
+         Size            =   4
+         Scale           =   0
+         Type            =   3
+         Name            =   "CliVilNum"
+         Caption         =   "CliVilNum"
+      EndProperty
+      BeginProperty Field10 
+         Precision       =   0
+         Size            =   536870910
+         Scale           =   0
+         Type            =   203
+         Name            =   "CliNote"
+         Caption         =   "CliNote"
+      EndProperty
+      BeginProperty Field11 
+         Precision       =   0
+         Size            =   50
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliTel1Libelle"
+         Caption         =   "CliTel1Libelle"
+      EndProperty
+      BeginProperty Field12 
+         Precision       =   0
+         Size            =   10
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliTel1"
+         Caption         =   "CliTel1"
       EndProperty
       BeginProperty Field13 
          Precision       =   0
-         Size            =   20
+         Size            =   50
          Scale           =   0
          Type            =   202
-         Name            =   "SOUSCRIPTEURVILLE"
-         Caption         =   "SOUSCRIPTEURVILLE"
+         Name            =   "CliTel2Libelle"
+         Caption         =   "CliTel2Libelle"
       EndProperty
       BeginProperty Field14 
+         Precision       =   0
+         Size            =   10
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliTel2"
+         Caption         =   "CliTel2"
+      EndProperty
+      BeginProperty Field15 
+         Precision       =   0
+         Size            =   10
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliBatiment"
+         Caption         =   "CliBatiment"
+      EndProperty
+      BeginProperty Field16 
+         Precision       =   5
+         Size            =   2
+         Scale           =   0
+         Type            =   2
+         Name            =   "CliEscalier"
+         Caption         =   "CliEscalier"
+      EndProperty
+      BeginProperty Field17 
          Precision       =   0
          Size            =   5
          Scale           =   0
          Type            =   202
-         Name            =   "SOUSCRIPTEURCODEPOSTAL"
-         Caption         =   "SOUSCRIPTEURCODEPOSTAL"
+         Name            =   "CliEtage"
+         Caption         =   "CliEtage"
       EndProperty
-      BeginProperty Field15 
+      BeginProperty Field18 
+         Precision       =   0
+         Size            =   10
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliPorte"
+         Caption         =   "CliPorte"
+      EndProperty
+      BeginProperty Field19 
+         Precision       =   0
+         Size            =   20
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliDigicode"
+         Caption         =   "CliDigicode"
+      EndProperty
+      BeginProperty Field20 
+         Precision       =   0
+         Size            =   5
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliSousCivCode"
+         Caption         =   "CliSousCivCode"
+      EndProperty
+      BeginProperty Field21 
+         Precision       =   0
+         Size            =   20
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliSousNom"
+         Caption         =   "CliSousNom"
+      EndProperty
+      BeginProperty Field22 
+         Precision       =   0
+         Size            =   20
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliSousPrenom"
+         Caption         =   "CliSousPrenom"
+      EndProperty
+      BeginProperty Field23 
          Precision       =   0
          Size            =   255
          Scale           =   0
          Type            =   202
-         Name            =   "SOUSCRIPTEURNOTE"
-         Caption         =   "SOUSCRIPTEURNOTE"
-      EndProperty
-      BeginProperty Field16 
-         Precision       =   0
-         Size            =   10
-         Scale           =   0
-         Type            =   202
-         Name            =   "SOUSCRIPTEURTELEPHONEBUREAU"
-         Caption         =   "SOUSCRIPTEURTELEPHONEBUREAU"
-      EndProperty
-      BeginProperty Field17 
-         Precision       =   0
-         Size            =   10
-         Scale           =   0
-         Type            =   202
-         Name            =   "SOUSCRIPTEURTELEPHONEMAISON"
-         Caption         =   "SOUSCRIPTEURTELEPHONEMAISON"
-      EndProperty
-      BeginProperty Field18 
-         Precision       =   0
-         Size            =   50
-         Scale           =   0
-         Type            =   202
-         Name            =   "CLIENTBATIMENT"
-         Caption         =   "CLIENTBATIMENT"
-      EndProperty
-      BeginProperty Field19 
-         Precision       =   0
-         Size            =   50
-         Scale           =   0
-         Type            =   202
-         Name            =   "CLIENTESC"
-         Caption         =   "CLIENTESC"
-      EndProperty
-      BeginProperty Field20 
-         Precision       =   0
-         Size            =   50
-         Scale           =   0
-         Type            =   202
-         Name            =   "CLIENTETAGE"
-         Caption         =   "CLIENTETAGE"
-      EndProperty
-      BeginProperty Field21 
-         Precision       =   0
-         Size            =   50
-         Scale           =   0
-         Type            =   202
-         Name            =   "CLIENTPORTE"
-         Caption         =   "CLIENTPORTE"
-      EndProperty
-      BeginProperty Field22 
-         Precision       =   0
-         Size            =   50
-         Scale           =   0
-         Type            =   202
-         Name            =   "CLIENTDIGICODE"
-         Caption         =   "CLIENTDIGICODE"
-      EndProperty
-      BeginProperty Field23 
-         Precision       =   0
-         Size            =   7
-         Scale           =   0
-         Type            =   202
-         Name            =   "CHAUDIERENUMERO"
-         Caption         =   "CHAUDIERENUMERO"
+         Name            =   "CliSousAdresse"
+         Caption         =   "CliSousAdresse"
       EndProperty
       BeginProperty Field24 
-         Precision       =   0
-         Size            =   50
+         Precision       =   10
+         Size            =   4
          Scale           =   0
-         Type            =   202
-         Name            =   "CHAUDIEREGAZ"
-         Caption         =   "CHAUDIEREGAZ"
+         Type            =   3
+         Name            =   "CliSousVilNum"
+         Caption         =   "CliSousVilNum"
       EndProperty
       BeginProperty Field25 
          Precision       =   0
-         Size            =   50
+         Size            =   536870910
          Scale           =   0
-         Type            =   202
-         Name            =   "CHAUDIERETYPE"
-         Caption         =   "CHAUDIERETYPE"
+         Type            =   203
+         Name            =   "CliSousNote"
+         Caption         =   "CliSousNote"
       EndProperty
       BeginProperty Field26 
          Precision       =   0
-         Size            =   50
+         Size            =   10
          Scale           =   0
          Type            =   202
-         Name            =   "CHAUDIEREPUISSANCE"
-         Caption         =   "CHAUDIEREPUISSANCE"
+         Name            =   "CliSousTel1"
+         Caption         =   "CliSousTel1"
       EndProperty
       BeginProperty Field27 
          Precision       =   0
          Size            =   50
          Scale           =   0
          Type            =   202
-         Name            =   "CHAUDIEREMARQUE"
-         Caption         =   "CHAUDIEREMARQUE"
+         Name            =   "CliSousTel1Libelle"
+         Caption         =   "CliSousTel1Libelle"
       EndProperty
       BeginProperty Field28 
+         Precision       =   0
+         Size            =   10
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliSousTel2"
+         Caption         =   "CliSousTel2"
+      EndProperty
+      BeginProperty Field29 
          Precision       =   0
          Size            =   50
          Scale           =   0
          Type            =   202
-         Name            =   "CONTRATTYPE"
-         Caption         =   "CONTRATTYPE"
-      EndProperty
-      BeginProperty Field29 
-         Precision       =   15
-         Size            =   8
-         Scale           =   0
-         Type            =   5
-         Name            =   "CONTRATCOEFFICIENT"
-         Caption         =   "CONTRATCOEFFICIENT"
+         Name            =   "CliSousTel2Libelle"
+         Caption         =   "CliSousTel2Libelle"
       EndProperty
       BeginProperty Field30 
+         Precision       =   10
+         Size            =   4
+         Scale           =   0
+         Type            =   3
+         Name            =   "CliConNum"
+         Caption         =   "CliConNum"
+      EndProperty
+      BeginProperty Field31 
+         Precision       =   10
+         Size            =   4
+         Scale           =   0
+         Type            =   3
+         Name            =   "CliConCliNum"
+         Caption         =   "CliConCliNum"
+      EndProperty
+      BeginProperty Field32 
          Precision       =   0
          Size            =   8
          Scale           =   0
          Type            =   7
-         Name            =   "CONTRATPAIEMENT"
-         Caption         =   "CONTRATPAIEMENT"
-      EndProperty
-      BeginProperty Field31 
-         Precision       =   0
-         Size            =   50
-         Scale           =   0
-         Type            =   202
-         Name            =   "CONTRATCATEGORIE"
-         Caption         =   "CONTRATCATEGORIE"
-      EndProperty
-      BeginProperty Field32 
-         Precision       =   15
-         Size            =   8
-         Scale           =   0
-         Type            =   5
-         Name            =   "CONTRATTVA"
-         Caption         =   "CONTRATTVA"
+         Name            =   "CliConDateDebut"
+         Caption         =   "CliConDateDebut"
       EndProperty
       BeginProperty Field33 
          Precision       =   0
          Size            =   8
          Scale           =   0
          Type            =   7
-         Name            =   "CONTRATDEBUT"
-         Caption         =   "CONTRATDEBUT"
+         Name            =   "CliConDateFin"
+         Caption         =   "CliConDateFin"
       EndProperty
       BeginProperty Field34 
          Precision       =   0
          Size            =   8
          Scale           =   0
          Type            =   7
-         Name            =   "CONTRATFIN"
-         Caption         =   "CONTRATFIN"
+         Name            =   "CliConDatePaiment"
+         Caption         =   "CliConDatePaiment"
       EndProperty
       BeginProperty Field35 
          Precision       =   0
-         Size            =   8
+         Size            =   50
          Scale           =   0
-         Type            =   7
-         Name            =   "CONTRATV1"
-         Caption         =   "CONTRATV1"
+         Type            =   202
+         Name            =   "CliConType"
+         Caption         =   "CliConType"
       EndProperty
       BeginProperty Field36 
+         Precision       =   7
+         Size            =   4
+         Scale           =   0
+         Type            =   4
+         Name            =   "CliConCoefficient"
+         Caption         =   "CliConCoefficient"
+      EndProperty
+      BeginProperty Field37 
          Precision       =   19
          Size            =   8
          Scale           =   0
          Type            =   6
-         Name            =   "CONTRATPRIX"
-         Caption         =   "CONTRATPRIX"
+         Name            =   "CliConPrixHT"
+         Caption         =   "CliConPrixHT"
+      EndProperty
+      BeginProperty Field38 
+         Precision       =   19
+         Size            =   8
+         Scale           =   0
+         Type            =   6
+         Name            =   "CliConTVA"
+         Caption         =   "CliConTVA"
+      EndProperty
+      BeginProperty Field39 
+         Precision       =   19
+         Size            =   8
+         Scale           =   0
+         Type            =   6
+         Name            =   "CliConPrix"
+         Caption         =   "CliConPrix"
+      EndProperty
+      BeginProperty Field40 
+         Precision       =   0
+         Size            =   2
+         Scale           =   0
+         Type            =   11
+         Name            =   "CliConActif"
+         Caption         =   "CliConActif"
+      EndProperty
+      BeginProperty Field41 
+         Precision       =   0
+         Size            =   50
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliVilNom"
+         Caption         =   "CliVilNom"
+      EndProperty
+      BeginProperty Field42 
+         Precision       =   0
+         Size            =   5
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliVilCodePostal"
+         Caption         =   "CliVilCodePostal"
+      EndProperty
+      BeginProperty Field43 
+         Precision       =   0
+         Size            =   50
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliSousVilNom"
+         Caption         =   "CliSousVilNom"
+      EndProperty
+      BeginProperty Field44 
+         Precision       =   0
+         Size            =   5
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliSousCodePostal"
+         Caption         =   "CliSousCodePostal"
       EndProperty
       NumGroups       =   0
       ParamCount      =   0
@@ -936,58 +1176,59 @@ Begin {C0E45035-5775-11D0-B388-00A0C9055D8E} DEFacture
       CommandName     =   "DEcmdSqlPassage"
       CommDispId      =   1038
       RsDispId        =   1050
-      CommandText     =   $"DEFacture.dsx":00B4
+      CommandText     =   $"DEFacture.dsx":0565
       ActiveConnectionName=   "DEconFacture"
       CommandType     =   1
+      Expanded        =   -1  'True
       IsRSReturning   =   -1  'True
       NumFields       =   6
       BeginProperty Field1 
-         Precision       =   0
-         Size            =   50
+         Precision       =   10
+         Size            =   4
          Scale           =   0
-         Type            =   202
-         Name            =   "CLIENTNUMERO"
-         Caption         =   "CLIENTNUMERO"
+         Type            =   3
+         Name            =   "CliNum"
+         Caption         =   "CliNum"
       EndProperty
       BeginProperty Field2 
          Precision       =   0
          Size            =   20
          Scale           =   0
          Type            =   202
-         Name            =   "UTILISATEURNOM"
-         Caption         =   "UTILISATEURNOM"
+         Name            =   "CliNom"
+         Caption         =   "CliNom"
       EndProperty
       BeginProperty Field3 
          Precision       =   0
          Size            =   20
          Scale           =   0
          Type            =   202
-         Name            =   "UTILISATEURPRENOM"
-         Caption         =   "UTILISATEURPRENOM"
+         Name            =   "CliPrenom"
+         Caption         =   "CliPrenom"
       EndProperty
       BeginProperty Field4 
          Precision       =   0
          Size            =   255
          Scale           =   0
          Type            =   202
-         Name            =   "UTILISATEURADRESSE"
-         Caption         =   "UTILISATEURADRESSE"
+         Name            =   "CliAdresse"
+         Caption         =   "CliAdresse"
       EndProperty
       BeginProperty Field5 
          Precision       =   0
          Size            =   5
          Scale           =   0
          Type            =   202
-         Name            =   "UTILISATEURCODEPOSTAL"
-         Caption         =   "UTILISATEURCODEPOSTAL"
+         Name            =   "CliVilCodePostal"
+         Caption         =   "CliVilCodePostal"
       EndProperty
       BeginProperty Field6 
          Precision       =   0
-         Size            =   20
+         Size            =   50
          Scale           =   0
          Type            =   202
-         Name            =   "UTILISATEURVILLE"
-         Caption         =   "UTILISATEURVILLE"
+         Name            =   "CliVilNom"
+         Caption         =   "CliVilNom"
       EndProperty
       NumGroups       =   0
       ParamCount      =   0
@@ -997,299 +1238,444 @@ Begin {C0E45035-5775-11D0-B388-00A0C9055D8E} DEFacture
    BeginProperty Recordset5 
       CommandName     =   "DEcmdSqlEcheancier"
       CommDispId      =   1051
-      RsDispId        =   1053
-      CommandText     =   "SELECT * FROM TABLECLIENT"
+      RsDispId        =   1068
+      CommandText     =   $"DEFacture.dsx":0656
       ActiveConnectionName=   "DEconFacture"
       CommandType     =   1
+      Expanded        =   -1  'True
       IsRSReturning   =   -1  'True
-      NumFields       =   36
+      NumFields       =   54
       BeginProperty Field1 
-         Precision       =   0
-         Size            =   50
+         Precision       =   10
+         Size            =   4
          Scale           =   0
-         Type            =   202
-         Name            =   "CLIENTNUMERO"
-         Caption         =   "CLIENTNUMERO"
+         Type            =   3
+         Name            =   "CliNum"
+         Caption         =   "CliNum"
       EndProperty
       BeginProperty Field2 
          Precision       =   0
-         Size            =   20
+         Size            =   6
          Scale           =   0
          Type            =   202
-         Name            =   "UTILISATEURNOM"
-         Caption         =   "UTILISATEURNOM"
+         Name            =   "CliCode"
+         Caption         =   "CliCode"
       EndProperty
       BeginProperty Field3 
          Precision       =   0
-         Size            =   20
+         Size            =   8
          Scale           =   0
-         Type            =   202
-         Name            =   "UTILISATEURPRENOM"
-         Caption         =   "UTILISATEURPRENOM"
+         Type            =   7
+         Name            =   "CliDateCre"
+         Caption         =   "CliDateCre"
       EndProperty
       BeginProperty Field4 
          Precision       =   0
-         Size            =   255
+         Size            =   8
          Scale           =   0
-         Type            =   202
-         Name            =   "UTILISATEURADRESSE"
-         Caption         =   "UTILISATEURADRESSE"
+         Type            =   7
+         Name            =   "CliDateMaj"
+         Caption         =   "CliDateMaj"
       EndProperty
       BeginProperty Field5 
          Precision       =   0
-         Size            =   20
+         Size            =   5
          Scale           =   0
          Type            =   202
-         Name            =   "UTILISATEURVILLE"
-         Caption         =   "UTILISATEURVILLE"
+         Name            =   "CliCivCode"
+         Caption         =   "CliCivCode"
       EndProperty
       BeginProperty Field6 
          Precision       =   0
-         Size            =   5
+         Size            =   20
          Scale           =   0
          Type            =   202
-         Name            =   "UTILISATEURCODEPOSTAL"
-         Caption         =   "UTILISATEURCODEPOSTAL"
+         Name            =   "CliNom"
+         Caption         =   "CliNom"
       EndProperty
       BeginProperty Field7 
          Precision       =   0
-         Size            =   255
+         Size            =   20
          Scale           =   0
          Type            =   202
-         Name            =   "UTILISATEURNOTE"
-         Caption         =   "UTILISATEURNOTE"
+         Name            =   "CliPrenom"
+         Caption         =   "CliPrenom"
       EndProperty
       BeginProperty Field8 
          Precision       =   0
-         Size            =   10
-         Scale           =   0
-         Type            =   202
-         Name            =   "UTILISATEURTELEPHONEBUREAU"
-         Caption         =   "UTILISATEURTELEPHONEBUREAU"
-      EndProperty
-      BeginProperty Field9 
-         Precision       =   0
-         Size            =   10
-         Scale           =   0
-         Type            =   202
-         Name            =   "UTILISATEURTELEPHONEMAISON"
-         Caption         =   "UTILISATEURTELEPHONEMAISON"
-      EndProperty
-      BeginProperty Field10 
-         Precision       =   0
-         Size            =   20
-         Scale           =   0
-         Type            =   202
-         Name            =   "SOUSCRIPTEURNOM"
-         Caption         =   "SOUSCRIPTEURNOM"
-      EndProperty
-      BeginProperty Field11 
-         Precision       =   0
-         Size            =   20
-         Scale           =   0
-         Type            =   202
-         Name            =   "SOUSCRIPTEURPRENOM"
-         Caption         =   "SOUSCRIPTEURPRENOM"
-      EndProperty
-      BeginProperty Field12 
-         Precision       =   0
          Size            =   255
          Scale           =   0
          Type            =   202
-         Name            =   "SOUSCRIPTEURADRESSE"
-         Caption         =   "SOUSCRIPTEURADRESSE"
+         Name            =   "CliAdresse"
+         Caption         =   "CliAdresse"
+      EndProperty
+      BeginProperty Field9 
+         Precision       =   10
+         Size            =   4
+         Scale           =   0
+         Type            =   3
+         Name            =   "CliVilNum"
+         Caption         =   "CliVilNum"
+      EndProperty
+      BeginProperty Field10 
+         Precision       =   0
+         Size            =   536870910
+         Scale           =   0
+         Type            =   203
+         Name            =   "CliNote"
+         Caption         =   "CliNote"
+      EndProperty
+      BeginProperty Field11 
+         Precision       =   0
+         Size            =   50
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliTel1Libelle"
+         Caption         =   "CliTel1Libelle"
+      EndProperty
+      BeginProperty Field12 
+         Precision       =   0
+         Size            =   10
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliTel1"
+         Caption         =   "CliTel1"
       EndProperty
       BeginProperty Field13 
          Precision       =   0
-         Size            =   20
+         Size            =   50
          Scale           =   0
          Type            =   202
-         Name            =   "SOUSCRIPTEURVILLE"
-         Caption         =   "SOUSCRIPTEURVILLE"
+         Name            =   "CliTel2Libelle"
+         Caption         =   "CliTel2Libelle"
       EndProperty
       BeginProperty Field14 
+         Precision       =   0
+         Size            =   10
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliTel2"
+         Caption         =   "CliTel2"
+      EndProperty
+      BeginProperty Field15 
+         Precision       =   0
+         Size            =   10
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliBatiment"
+         Caption         =   "CliBatiment"
+      EndProperty
+      BeginProperty Field16 
+         Precision       =   5
+         Size            =   2
+         Scale           =   0
+         Type            =   2
+         Name            =   "CliEscalier"
+         Caption         =   "CliEscalier"
+      EndProperty
+      BeginProperty Field17 
          Precision       =   0
          Size            =   5
          Scale           =   0
          Type            =   202
-         Name            =   "SOUSCRIPTEURCODEPOSTAL"
-         Caption         =   "SOUSCRIPTEURCODEPOSTAL"
+         Name            =   "CliEtage"
+         Caption         =   "CliEtage"
       EndProperty
-      BeginProperty Field15 
+      BeginProperty Field18 
+         Precision       =   0
+         Size            =   10
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliPorte"
+         Caption         =   "CliPorte"
+      EndProperty
+      BeginProperty Field19 
+         Precision       =   0
+         Size            =   20
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliDigicode"
+         Caption         =   "CliDigicode"
+      EndProperty
+      BeginProperty Field20 
+         Precision       =   0
+         Size            =   5
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliSousCivCode"
+         Caption         =   "CliSousCivCode"
+      EndProperty
+      BeginProperty Field21 
+         Precision       =   0
+         Size            =   20
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliSousNom"
+         Caption         =   "CliSousNom"
+      EndProperty
+      BeginProperty Field22 
+         Precision       =   0
+         Size            =   20
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliSousPrenom"
+         Caption         =   "CliSousPrenom"
+      EndProperty
+      BeginProperty Field23 
          Precision       =   0
          Size            =   255
          Scale           =   0
          Type            =   202
-         Name            =   "SOUSCRIPTEURNOTE"
-         Caption         =   "SOUSCRIPTEURNOTE"
-      EndProperty
-      BeginProperty Field16 
-         Precision       =   0
-         Size            =   10
-         Scale           =   0
-         Type            =   202
-         Name            =   "SOUSCRIPTEURTELEPHONEBUREAU"
-         Caption         =   "SOUSCRIPTEURTELEPHONEBUREAU"
-      EndProperty
-      BeginProperty Field17 
-         Precision       =   0
-         Size            =   10
-         Scale           =   0
-         Type            =   202
-         Name            =   "SOUSCRIPTEURTELEPHONEMAISON"
-         Caption         =   "SOUSCRIPTEURTELEPHONEMAISON"
-      EndProperty
-      BeginProperty Field18 
-         Precision       =   0
-         Size            =   50
-         Scale           =   0
-         Type            =   202
-         Name            =   "CLIENTBATIMENT"
-         Caption         =   "CLIENTBATIMENT"
-      EndProperty
-      BeginProperty Field19 
-         Precision       =   0
-         Size            =   50
-         Scale           =   0
-         Type            =   202
-         Name            =   "CLIENTESC"
-         Caption         =   "CLIENTESC"
-      EndProperty
-      BeginProperty Field20 
-         Precision       =   0
-         Size            =   50
-         Scale           =   0
-         Type            =   202
-         Name            =   "CLIENTETAGE"
-         Caption         =   "CLIENTETAGE"
-      EndProperty
-      BeginProperty Field21 
-         Precision       =   0
-         Size            =   50
-         Scale           =   0
-         Type            =   202
-         Name            =   "CLIENTPORTE"
-         Caption         =   "CLIENTPORTE"
-      EndProperty
-      BeginProperty Field22 
-         Precision       =   0
-         Size            =   50
-         Scale           =   0
-         Type            =   202
-         Name            =   "CLIENTDIGICODE"
-         Caption         =   "CLIENTDIGICODE"
-      EndProperty
-      BeginProperty Field23 
-         Precision       =   0
-         Size            =   7
-         Scale           =   0
-         Type            =   202
-         Name            =   "CHAUDIERENUMERO"
-         Caption         =   "CHAUDIERENUMERO"
+         Name            =   "CliSousAdresse"
+         Caption         =   "CliSousAdresse"
       EndProperty
       BeginProperty Field24 
-         Precision       =   0
-         Size            =   50
+         Precision       =   10
+         Size            =   4
          Scale           =   0
-         Type            =   202
-         Name            =   "CHAUDIEREGAZ"
-         Caption         =   "CHAUDIEREGAZ"
+         Type            =   3
+         Name            =   "CliSousVilNum"
+         Caption         =   "CliSousVilNum"
       EndProperty
       BeginProperty Field25 
          Precision       =   0
-         Size            =   50
+         Size            =   536870910
          Scale           =   0
-         Type            =   202
-         Name            =   "CHAUDIERETYPE"
-         Caption         =   "CHAUDIERETYPE"
+         Type            =   203
+         Name            =   "CliSousNote"
+         Caption         =   "CliSousNote"
       EndProperty
       BeginProperty Field26 
          Precision       =   0
-         Size            =   50
+         Size            =   10
          Scale           =   0
          Type            =   202
-         Name            =   "CHAUDIEREPUISSANCE"
-         Caption         =   "CHAUDIEREPUISSANCE"
+         Name            =   "CliSousTel1"
+         Caption         =   "CliSousTel1"
       EndProperty
       BeginProperty Field27 
          Precision       =   0
          Size            =   50
          Scale           =   0
          Type            =   202
-         Name            =   "CHAUDIEREMARQUE"
-         Caption         =   "CHAUDIEREMARQUE"
+         Name            =   "CliSousTel1Libelle"
+         Caption         =   "CliSousTel1Libelle"
       EndProperty
       BeginProperty Field28 
+         Precision       =   0
+         Size            =   10
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliSousTel2"
+         Caption         =   "CliSousTel2"
+      EndProperty
+      BeginProperty Field29 
          Precision       =   0
          Size            =   50
          Scale           =   0
          Type            =   202
-         Name            =   "CONTRATTYPE"
-         Caption         =   "CONTRATTYPE"
-      EndProperty
-      BeginProperty Field29 
-         Precision       =   15
-         Size            =   8
-         Scale           =   0
-         Type            =   5
-         Name            =   "CONTRATCOEFFICIENT"
-         Caption         =   "CONTRATCOEFFICIENT"
+         Name            =   "CliSousTel2Libelle"
+         Caption         =   "CliSousTel2Libelle"
       EndProperty
       BeginProperty Field30 
+         Precision       =   10
+         Size            =   4
+         Scale           =   0
+         Type            =   3
+         Name            =   "CliConNum"
+         Caption         =   "CliConNum"
+      EndProperty
+      BeginProperty Field31 
+         Precision       =   10
+         Size            =   4
+         Scale           =   0
+         Type            =   3
+         Name            =   "CliConCliNum"
+         Caption         =   "CliConCliNum"
+      EndProperty
+      BeginProperty Field32 
          Precision       =   0
          Size            =   8
          Scale           =   0
          Type            =   7
-         Name            =   "CONTRATPAIEMENT"
-         Caption         =   "CONTRATPAIEMENT"
-      EndProperty
-      BeginProperty Field31 
-         Precision       =   0
-         Size            =   50
-         Scale           =   0
-         Type            =   202
-         Name            =   "CONTRATCATEGORIE"
-         Caption         =   "CONTRATCATEGORIE"
-      EndProperty
-      BeginProperty Field32 
-         Precision       =   15
-         Size            =   8
-         Scale           =   0
-         Type            =   5
-         Name            =   "CONTRATTVA"
-         Caption         =   "CONTRATTVA"
+         Name            =   "CliConDateDebut"
+         Caption         =   "CliConDateDebut"
       EndProperty
       BeginProperty Field33 
          Precision       =   0
          Size            =   8
          Scale           =   0
          Type            =   7
-         Name            =   "CONTRATDEBUT"
-         Caption         =   "CONTRATDEBUT"
+         Name            =   "CliConDateFin"
+         Caption         =   "CliConDateFin"
       EndProperty
       BeginProperty Field34 
          Precision       =   0
          Size            =   8
          Scale           =   0
          Type            =   7
-         Name            =   "CONTRATFIN"
-         Caption         =   "CONTRATFIN"
+         Name            =   "CliConDatePaiment"
+         Caption         =   "CliConDatePaiment"
       EndProperty
       BeginProperty Field35 
          Precision       =   0
-         Size            =   8
+         Size            =   50
          Scale           =   0
-         Type            =   7
-         Name            =   "CONTRATV1"
-         Caption         =   "CONTRATV1"
+         Type            =   202
+         Name            =   "CliConType"
+         Caption         =   "CliConType"
       EndProperty
       BeginProperty Field36 
+         Precision       =   7
+         Size            =   4
+         Scale           =   0
+         Type            =   4
+         Name            =   "CliConCoefficient"
+         Caption         =   "CliConCoefficient"
+      EndProperty
+      BeginProperty Field37 
          Precision       =   19
          Size            =   8
          Scale           =   0
          Type            =   6
-         Name            =   "CONTRATPRIX"
-         Caption         =   "CONTRATPRIX"
+         Name            =   "CliConPrixHT"
+         Caption         =   "CliConPrixHT"
+      EndProperty
+      BeginProperty Field38 
+         Precision       =   19
+         Size            =   8
+         Scale           =   0
+         Type            =   6
+         Name            =   "CliConTVA"
+         Caption         =   "CliConTVA"
+      EndProperty
+      BeginProperty Field39 
+         Precision       =   19
+         Size            =   8
+         Scale           =   0
+         Type            =   6
+         Name            =   "CliConPrix"
+         Caption         =   "CliConPrix"
+      EndProperty
+      BeginProperty Field40 
+         Precision       =   0
+         Size            =   2
+         Scale           =   0
+         Type            =   11
+         Name            =   "CliConActif"
+         Caption         =   "CliConActif"
+      EndProperty
+      BeginProperty Field41 
+         Precision       =   0
+         Size            =   50
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliVilNom"
+         Caption         =   "CliVilNom"
+      EndProperty
+      BeginProperty Field42 
+         Precision       =   0
+         Size            =   5
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliVilCodePostal"
+         Caption         =   "CliVilCodePostal"
+      EndProperty
+      BeginProperty Field43 
+         Precision       =   0
+         Size            =   50
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliSousVilNom"
+         Caption         =   "CliSousVilNom"
+      EndProperty
+      BeginProperty Field44 
+         Precision       =   0
+         Size            =   5
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliSousVilCodePostal"
+         Caption         =   "CliSousVilCodePostal"
+      EndProperty
+      BeginProperty Field45 
+         Precision       =   10
+         Size            =   4
+         Scale           =   0
+         Type            =   3
+         Name            =   "CliChdNum"
+         Caption         =   "CliChdNum"
+      EndProperty
+      BeginProperty Field46 
+         Precision       =   10
+         Size            =   4
+         Scale           =   0
+         Type            =   3
+         Name            =   "CliChdCliNum"
+         Caption         =   "CliChdCliNum"
+      EndProperty
+      BeginProperty Field47 
+         Precision       =   0
+         Size            =   14
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliChdRef"
+         Caption         =   "CliChdRef"
+      EndProperty
+      BeginProperty Field48 
+         Precision       =   0
+         Size            =   8
+         Scale           =   0
+         Type            =   7
+         Name            =   "CliChdDateServ"
+         Caption         =   "CliChdDateServ"
+      EndProperty
+      BeginProperty Field49 
+         Precision       =   0
+         Size            =   20
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliChdGaz"
+         Caption         =   "CliChdGaz"
+      EndProperty
+      BeginProperty Field50 
+         Precision       =   0
+         Size            =   20
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliChdIdentification"
+         Caption         =   "CliChdIdentification"
+      EndProperty
+      BeginProperty Field51 
+         Precision       =   0
+         Size            =   20
+         Scale           =   0
+         Type            =   202
+         Name            =   "CliChdMarque"
+         Caption         =   "CliChdMarque"
+      EndProperty
+      BeginProperty Field52 
+         Precision       =   10
+         Size            =   4
+         Scale           =   0
+         Type            =   3
+         Name            =   "CliChdPuissance"
+         Caption         =   "CliChdPuissance"
+      EndProperty
+      BeginProperty Field53 
+         Precision       =   0
+         Size            =   536870910
+         Scale           =   0
+         Type            =   203
+         Name            =   "CliChdRemarque"
+         Caption         =   "CliChdRemarque"
+      EndProperty
+      BeginProperty Field54 
+         Precision       =   0
+         Size            =   2
+         Scale           =   0
+         Type            =   11
+         Name            =   "CliChdActif"
+         Caption         =   "CliChdActif"
       EndProperty
       NumGroups       =   0
       ParamCount      =   0

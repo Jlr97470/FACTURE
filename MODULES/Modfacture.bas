@@ -67,7 +67,7 @@ Private Sub Main()
     ' En Cas D'Erreur Je Gere L'Erreur
     On Error GoTo Main_Erreur
     ' Je defini la chaine de connection a la base
-    DEFacture.DEconFacture.ConnectionString = "Provider=Microsoft.Jet.OLEDB.4.0;Data Source=" & App.Path & "\DATA\FACTURE.MDB;Persist Security Info=False"
+    DEFacture.DEconFacture.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=" & App.Path & "\DATABASE\BretinFich.ACCDB;Persist Security Info=False"
     ' J'affiche la feuille principale
     MDIFacture.Show
     ' Fin

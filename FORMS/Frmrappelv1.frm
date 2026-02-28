@@ -45,10 +45,10 @@ Begin VB.Form FrmRappelV1
          Strikethrough   =   0   'False
       EndProperty
       DataMember      =   "DEcmdSqlClientV1"
-      ColumnCount     =   37
+      ColumnCount     =   40
       BeginProperty Column00 
-         DataField       =   "CLECLIENT"
-         Caption         =   "CLECLIENT"
+         DataField       =   "CliNum"
+         Caption         =   "CliNum"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -60,8 +60,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column01 
-         DataField       =   "CLIENTNUMERO"
-         Caption         =   "NUMERO"
+         DataField       =   "CliCode"
+         Caption         =   "CliCode"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -73,8 +73,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column02 
-         DataField       =   "UTILISATEURNOM"
-         Caption         =   "UTILISATEUR NOM"
+         DataField       =   "CliDateCre"
+         Caption         =   "CliDateCre"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -86,8 +86,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column03 
-         DataField       =   "UTILISATEURPRENOM"
-         Caption         =   "UTILISATEUR PRENOM"
+         DataField       =   "CliDateMaj"
+         Caption         =   "CliDateMaj"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -99,8 +99,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column04 
-         DataField       =   "UTILISATEURADRESSE"
-         Caption         =   "UTILISATEUR ADRESSE"
+         DataField       =   "CliCivCode"
+         Caption         =   "CliCivCode"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -112,8 +112,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column05 
-         DataField       =   "UTILISATEURVILLE"
-         Caption         =   "UTILISATEUR VILLE"
+         DataField       =   "CliNom"
+         Caption         =   "CliNom"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -125,8 +125,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column06 
-         DataField       =   "UTILISATEURCODEPOSTAL"
-         Caption         =   "UTILISATEUR CODEPOSTAL"
+         DataField       =   "CliPrenom"
+         Caption         =   "CliPrenom"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -138,8 +138,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column07 
-         DataField       =   "UTILISATEURNOTE"
-         Caption         =   "UTILISATEUR NOTE"
+         DataField       =   "CliAdresse"
+         Caption         =   "CliAdresse"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -151,8 +151,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column08 
-         DataField       =   "UTILISATEURTELEPHONEBUREAU"
-         Caption         =   "UTILISATEUR TELEPHONE BUREAU"
+         DataField       =   "CliVilNum"
+         Caption         =   "CliVilNum"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -164,8 +164,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column09 
-         DataField       =   "UTILISATEURTELEPHONEMAISON"
-         Caption         =   "UTILISATEUR TELEPHONE DOMICIL"
+         DataField       =   "CliNote"
+         Caption         =   "CliNote"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -177,8 +177,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column10 
-         DataField       =   "SOUSCRIPTEURNOM"
-         Caption         =   "SOUSCRIPTEUR NOM"
+         DataField       =   "CliTel1Libelle"
+         Caption         =   "CliTel1Libelle"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -190,8 +190,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column11 
-         DataField       =   "SOUSCRIPTEURPRENOM"
-         Caption         =   "SOUSCRIPTEUR PRENOM"
+         DataField       =   "CliTel1"
+         Caption         =   "CliTel1"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -203,8 +203,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column12 
-         DataField       =   "SOUSCRIPTEURADRESSE"
-         Caption         =   "SOUSCRIPTEUR ADRESSE"
+         DataField       =   "CliTel2Libelle"
+         Caption         =   "CliTel2Libelle"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -216,8 +216,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column13 
-         DataField       =   "SOUSCRIPTEURVILLE"
-         Caption         =   "SOUSCRIPTEUR VILLE"
+         DataField       =   "CliTel2"
+         Caption         =   "CliTel2"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -229,8 +229,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column14 
-         DataField       =   "SOUSCRIPTEURCODEPOSTAL"
-         Caption         =   "SOUSCRIPTEUR CODEPOSTAL"
+         DataField       =   "CliBatiment"
+         Caption         =   "CliBatiment"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -242,8 +242,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column15 
-         DataField       =   "SOUSCRIPTEURNOTE"
-         Caption         =   "SOUSCRIPTEUR NOTE"
+         DataField       =   "CliEscalier"
+         Caption         =   "CliEscalier"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -255,8 +255,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column16 
-         DataField       =   "SOUSCRIPTEURTELEPHONEBUREAU"
-         Caption         =   "SOUSCRIPTEUR TELEPHONE BUREAU"
+         DataField       =   "CliEtage"
+         Caption         =   "CliEtage"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -268,8 +268,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column17 
-         DataField       =   "SOUSCRIPTEURTELEPHONEMAISON"
-         Caption         =   "SOUSCRIPTEUR TELEPHONE DOMICIL"
+         DataField       =   "CliPorte"
+         Caption         =   "CliPorte"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -281,8 +281,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column18 
-         DataField       =   "CLIENTBATIMENT"
-         Caption         =   "BATIMENT"
+         DataField       =   "CliDigicode"
+         Caption         =   "CliDigicode"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -294,8 +294,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column19 
-         DataField       =   "CLIENTESC"
-         Caption         =   "ESC"
+         DataField       =   "CliSousCivCode"
+         Caption         =   "CliSousCivCode"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -307,8 +307,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column20 
-         DataField       =   "CLIENTETAGE"
-         Caption         =   "ETAGE"
+         DataField       =   "CliSousNom"
+         Caption         =   "CliSousNom"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -320,8 +320,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column21 
-         DataField       =   "CLIENTPORTE"
-         Caption         =   "PORTE"
+         DataField       =   "CliSousPrenom"
+         Caption         =   "CliSousPrenom"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -333,8 +333,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column22 
-         DataField       =   "CLIENTDIGICODE"
-         Caption         =   "DIGICODE"
+         DataField       =   "CliSousAdresse"
+         Caption         =   "CliSousAdresse"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -346,8 +346,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column23 
-         DataField       =   "CHAUDIERENUMERO"
-         Caption         =   "NUMERO"
+         DataField       =   "CliSousVilNum"
+         Caption         =   "CliSousVilNum"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -359,8 +359,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column24 
-         DataField       =   "CHAUDIEREGAZ"
-         Caption         =   "GAZ"
+         DataField       =   "CliSousNote"
+         Caption         =   "CliSousNote"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -372,8 +372,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column25 
-         DataField       =   "CHAUDIERETYPE"
-         Caption         =   "TYPE"
+         DataField       =   "CliSousTel1"
+         Caption         =   "CliSousTel1"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -385,8 +385,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column26 
-         DataField       =   "CHAUDIEREPUISSANCE"
-         Caption         =   "PUISSANCE"
+         DataField       =   "CliSousTel1Libelle"
+         Caption         =   "CliSousTel1Libelle"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -398,8 +398,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column27 
-         DataField       =   "CHAUDIEREMARQUE"
-         Caption         =   "MARQUE"
+         DataField       =   "CliSousTel2"
+         Caption         =   "CliSousTel2"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -411,8 +411,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column28 
-         DataField       =   "CONTRATTYPE"
-         Caption         =   "TYPE"
+         DataField       =   "CliSousTel2Libelle"
+         Caption         =   "CliSousTel2Libelle"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -424,8 +424,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column29 
-         DataField       =   "CONTRATCOEFFICIENT"
-         Caption         =   "COEFFICIENT"
+         DataField       =   "CliConNum"
+         Caption         =   "CliConNum"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -437,8 +437,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column30 
-         DataField       =   "CONTRATPAIEMENT"
-         Caption         =   "PAIEMENT"
+         DataField       =   "CliConCliNum"
+         Caption         =   "CliConCliNum"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -450,8 +450,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column31 
-         DataField       =   "CONTRATCATEGORIE"
-         Caption         =   "CATEGORIE"
+         DataField       =   "CliConDateDebut"
+         Caption         =   "CliConDateDebut"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -463,8 +463,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column32 
-         DataField       =   "CONTRATTVA"
-         Caption         =   "TVA"
+         DataField       =   "CliConDateFin"
+         Caption         =   "CliConDateFin"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -476,8 +476,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column33 
-         DataField       =   "CONTRATDEBUT"
-         Caption         =   "DEBUT"
+         DataField       =   "CliConDatePaiment"
+         Caption         =   "CliConDatePaiment"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -489,8 +489,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column34 
-         DataField       =   "CONTRATFIN"
-         Caption         =   "FIN"
+         DataField       =   "CliConType"
+         Caption         =   "CliConType"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -502,8 +502,8 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column35 
-         DataField       =   "CONTRATV1"
-         Caption         =   "V1"
+         DataField       =   "CliConCoefficient"
+         Caption         =   "CliConCoefficient"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -515,8 +515,47 @@ Begin VB.Form FrmRappelV1
          EndProperty
       EndProperty
       BeginProperty Column36 
-         DataField       =   "CONTRATPRIX"
-         Caption         =   "PRIX"
+         DataField       =   "CliConPrixHT"
+         Caption         =   "CliConPrixHT"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+      EndProperty
+      BeginProperty Column37 
+         DataField       =   "CliConTVA"
+         Caption         =   "CliConTVA"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+      EndProperty
+      BeginProperty Column38 
+         DataField       =   "CliConPrix"
+         Caption         =   "CliConPrix"
+         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
+            Type            =   0
+            Format          =   ""
+            HaveTrueFalseNull=   0
+            FirstDayOfWeek  =   0
+            FirstWeekOfYear =   0
+            LCID            =   1036
+            SubFormatType   =   0
+         EndProperty
+      EndProperty
+      BeginProperty Column39 
+         DataField       =   "CliConActif"
+         Caption         =   "CliConActif"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -530,65 +569,64 @@ Begin VB.Form FrmRappelV1
       SplitCount      =   1
       BeginProperty Split0 
          BeginProperty Column00 
-            Object.Visible         =   0   'False
-            ColumnWidth     =   945,071
+            ColumnWidth     =   915,024
          EndProperty
          BeginProperty Column01 
-            ColumnWidth     =   1739,906
+            ColumnWidth     =   840,189
          EndProperty
          BeginProperty Column02 
             ColumnWidth     =   1739,906
          EndProperty
          BeginProperty Column03 
-            ColumnWidth     =   1844,787
+            ColumnWidth     =   1739,906
          EndProperty
          BeginProperty Column04 
-            ColumnWidth     =   1904,882
+            ColumnWidth     =   854,929
          EndProperty
          BeginProperty Column05 
             ColumnWidth     =   1739,906
          EndProperty
          BeginProperty Column06 
-            ColumnWidth     =   2220,094
+            ColumnWidth     =   1739,906
          EndProperty
          BeginProperty Column07 
             ColumnWidth     =   1739,906
          EndProperty
          BeginProperty Column08 
-            ColumnWidth     =   2789,858
+            ColumnWidth     =   915,024
          EndProperty
          BeginProperty Column09 
-            ColumnWidth     =   2745,071
+            ColumnWidth     =   1739,906
          EndProperty
          BeginProperty Column10 
             ColumnWidth     =   1739,906
          EndProperty
          BeginProperty Column11 
-            ColumnWidth     =   2055,118
+            ColumnWidth     =   1140,095
          EndProperty
          BeginProperty Column12 
-            ColumnWidth     =   2115,213
+            ColumnWidth     =   1739,906
          EndProperty
          BeginProperty Column13 
-            ColumnWidth     =   1785,26
+            ColumnWidth     =   1140,095
          EndProperty
          BeginProperty Column14 
-            ColumnWidth     =   2429,858
+            ColumnWidth     =   1140,095
          EndProperty
          BeginProperty Column15 
-            ColumnWidth     =   1800
+            ColumnWidth     =   810,142
          EndProperty
          BeginProperty Column16 
-            ColumnWidth     =   3000,189
+            ColumnWidth     =   764,787
          EndProperty
          BeginProperty Column17 
-            ColumnWidth     =   2954,835
+            ColumnWidth     =   1140,095
          EndProperty
          BeginProperty Column18 
             ColumnWidth     =   1739,906
          EndProperty
          BeginProperty Column19 
-            ColumnWidth     =   1739,906
+            ColumnWidth     =   1214,929
          EndProperty
          BeginProperty Column20 
             ColumnWidth     =   1739,906
@@ -600,31 +638,31 @@ Begin VB.Form FrmRappelV1
             ColumnWidth     =   1739,906
          EndProperty
          BeginProperty Column23 
-            ColumnWidth     =   1739,906
+            ColumnWidth     =   1170,142
          EndProperty
          BeginProperty Column24 
             ColumnWidth     =   1739,906
          EndProperty
          BeginProperty Column25 
-            ColumnWidth     =   1739,906
+            ColumnWidth     =   1140,095
          EndProperty
          BeginProperty Column26 
-            ColumnWidth     =   1934,929
+            ColumnWidth     =   1739,906
          EndProperty
          BeginProperty Column27 
-            ColumnWidth     =   1739,906
+            ColumnWidth     =   1140,095
          EndProperty
          BeginProperty Column28 
             ColumnWidth     =   1739,906
          EndProperty
          BeginProperty Column29 
-            ColumnWidth     =   1890,142
+            ColumnWidth     =   915,024
          EndProperty
          BeginProperty Column30 
-            ColumnWidth     =   1739,906
+            ColumnWidth     =   1094,74
          EndProperty
          BeginProperty Column31 
-            ColumnWidth     =   1785,26
+            ColumnWidth     =   1739,906
          EndProperty
          BeginProperty Column32 
             ColumnWidth     =   1739,906
@@ -636,10 +674,19 @@ Begin VB.Form FrmRappelV1
             ColumnWidth     =   1739,906
          EndProperty
          BeginProperty Column35 
-            ColumnWidth     =   1739,906
+            ColumnWidth     =   1349,858
          EndProperty
          BeginProperty Column36 
             ColumnWidth     =   1739,906
+         EndProperty
+         BeginProperty Column37 
+            ColumnWidth     =   1739,906
+         EndProperty
+         BeginProperty Column38 
+            ColumnWidth     =   1739,906
+         EndProperty
+         BeginProperty Column39 
+            ColumnWidth     =   900,284
          EndProperty
       EndProperty
    End
@@ -697,7 +744,7 @@ Private Sub Form_Load()
 
     With DEFacture
                         
-        .rsDEcmdSqlClientV1.Filter = "[CONTRATV1]<" & Date$
+        .rsDEcmdSqlClientV1.Filter = "[CliConDatePaiment]<" & Date$
     End With
     ' Fin
 Form_Load_Exit:

@@ -246,7 +246,7 @@ Private Sub cmdOk_Click()
         
         Case Else
         
-            DEFacture.rsDEcmdTableClient.Find "([CLIENTNUMERO] like '" & TxtRecherche(0) & "*')"
+            DEFacture.rsDEcmdTableClient.Find "([CliNum] like '" & TxtRecherche(0) & "*')"
     End Select
     
     Select Case TxtRecherche(1)
@@ -254,7 +254,7 @@ Private Sub cmdOk_Click()
         
         Case Else
         
-            DEFacture.rsDEcmdTableClient.Find "([CLIENTNOM] like '" & TxtRecherche(1) & "*')"
+            DEFacture.rsDEcmdTableClient.Find "([CliNom] like '" & TxtRecherche(1) & "*')"
     End Select
     
     Select Case TxtRecherche(2)
@@ -262,7 +262,7 @@ Private Sub cmdOk_Click()
         
         Case Else
         
-            DEFacture.rsDEcmdTableClient.Find "([CLIENTPRENOM] like '" & TxtRecherche(2) & "*')"
+            DEFacture.rsDEcmdTableClient.Find "([CliPrenom] like '" & TxtRecherche(2) & "*')"
     End Select
     
     Select Case TxtRecherche(3)
@@ -270,7 +270,7 @@ Private Sub cmdOk_Click()
         
         Case Else
         
-            DEFacture.rsDEcmdTableClient.Find "([CLIENTADRESSE] like '" & TxtRecherche(3) & "*')"
+            DEFacture.rsDEcmdTableClient.Find "([CliAdresse] like '" & TxtRecherche(3) & "*')"
     End Select
     
     Select Case TxtRecherche(4)
@@ -278,7 +278,7 @@ Private Sub cmdOk_Click()
         
         Case Else
         
-            DEFacture.rsDEcmdTableClient.Find "([CLIENTTELEPHONEBUREAU] like '" & TxtRecherche(4) & "*')"
+            DEFacture.rsDEcmdTableClient.Find "([CliTel1] like '" & TxtRecherche(4) & "*')"
     End Select
     
     Select Case TxtRecherche(5)
@@ -286,7 +286,7 @@ Private Sub cmdOk_Click()
         
         Case Else
         
-            DEFacture.rsDEcmdTableClient.Find "([CLIENTTELEPHONEMAISON] like '" & TxtRecherche(5) & "*')"
+            DEFacture.rsDEcmdTableClient.Find "([CliTel2] like '" & TxtRecherche(5) & "*')"
     End Select
     
     Select Case TxtRecherche(6)
@@ -294,7 +294,7 @@ Private Sub cmdOk_Click()
         
         Case Else
         
-            DEFacture.rsDEcmdTableClient.Find "([CLIENTVILLE] like '" & TxtRecherche(6) & "*')"
+            DEFacture.rsDEcmdTableClient.Find "([CliVilNom] like '" & TxtRecherche(6) & "*')"
     End Select
     
     Select Case TxtRecherche(7)
@@ -302,7 +302,7 @@ Private Sub cmdOk_Click()
         
         Case Else
         
-            DEFacture.rsDEcmdTableClient.Find "([CLIENTCODEPOSTAL] like '" & TxtRecherche(7) & "*')"
+            DEFacture.rsDEcmdTableClient.Find "([CliCodePostal] like '" & TxtRecherche(7) & "*')"
     End Select
     ' Fin
 cmdOk_Click_Exit:

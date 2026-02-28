@@ -9,7 +9,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} DREcheancier
    _ExtentX        =   26882
    _ExtentY        =   19606
    _Version        =   393216
-   _DesignerVersion=   100685828
+   _DesignerVersion=   100684101
    ReportWidth     =   11655
    BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
       Name            =   "Arial"
@@ -54,7 +54,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} DREcheancier
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         DataField       =   "CLIENTNUMERO"
+         DataField       =   "CliNum"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -83,7 +83,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} DREcheancier
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         DataField       =   "UTILISATEURNOM"
+         DataField       =   "CliNom"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -112,7 +112,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} DREcheancier
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         DataField       =   "UTILISATEURPRENOM"
+         DataField       =   "CliPrenom"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -141,7 +141,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} DREcheancier
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         DataField       =   "UTILISATEURADRESSE"
+         DataField       =   "CliAdresse"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -170,7 +170,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} DREcheancier
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         DataField       =   "UTILISATEURVILLE"
+         DataField       =   "CliVilNom"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -199,7 +199,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} DREcheancier
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         DataField       =   "UTILISATEURCODEPOSTAL"
+         DataField       =   "CliVilCodePostal"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -228,7 +228,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} DREcheancier
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         DataField       =   "UTILISATEURTELEPHONEBUREAU"
+         DataField       =   "CliTel2"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -257,7 +257,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} DREcheancier
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         DataField       =   "UTILISATEURTELEPHONEMAISON"
+         DataField       =   "CliTel1"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -286,7 +286,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} DREcheancier
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         DataField       =   "SOUSCRIPTEURNOM"
+         DataField       =   "CliSousNom"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -315,7 +315,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} DREcheancier
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         DataField       =   "SOUSCRIPTEURPRENOM"
+         DataField       =   "CliSousPrenom"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -344,7 +344,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} DREcheancier
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         DataField       =   "SOUSCRIPTEURADRESSE"
+         DataField       =   "CliSousAdresse"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -373,7 +373,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} DREcheancier
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         DataField       =   "SOUSCRIPTEURVILLE"
+         DataField       =   "CliSousVilNom"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -402,7 +402,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} DREcheancier
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         DataField       =   "SOUSCRIPTEURCODEPOSTAL"
+         DataField       =   "CliSousVilCodePostal"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -431,7 +431,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} DREcheancier
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         DataField       =   "SOUSCRIPTEURTELEPHONEBUREAU"
+         DataField       =   "CliSousTel2"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -460,7 +460,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} DREcheancier
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         DataField       =   "SOUSCRIPTEURTELEPHONEMAISON"
+         DataField       =   "CliSousTel1"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -489,7 +489,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} DREcheancier
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         DataField       =   "CLIENTBATIMENT"
+         DataField       =   "CliBatiment"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -518,7 +518,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} DREcheancier
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         DataField       =   "CLIENTETAGE"
+         DataField       =   "CliEtage"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -547,7 +547,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} DREcheancier
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         DataField       =   "CLIENTESC"
+         DataField       =   "CliEscalier"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -576,7 +576,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} DREcheancier
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         DataField       =   "CLIENTPORTE"
+         DataField       =   "CliPorte"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -605,7 +605,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} DREcheancier
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         DataField       =   "CLIENTDIGICODE"
+         DataField       =   "CliDigicode"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -634,7 +634,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} DREcheancier
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         DataField       =   "CHAUDIEREMARQUE"
+         DataField       =   "CliChdRemarque"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -663,7 +663,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} DREcheancier
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         DataField       =   "CHAUDIERENUMERO"
+         DataField       =   "CliChdRef"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -692,7 +692,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} DREcheancier
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         DataField       =   "CHAUDIEREPUISSANCE"
+         DataField       =   "CliChdPuissance"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
@@ -721,7 +721,7 @@ Begin {78E93846-85FD-11D0-8487-00A0C90DC8A9} DREcheancier
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         DataField       =   "CHAUDIEREGAZ"
+         DataField       =   "CliChdGaz"
          BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
             Type            =   0
             Format          =   ""
