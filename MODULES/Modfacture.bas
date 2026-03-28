@@ -33,13 +33,6 @@ Private Const mconFeuilleNom = "modFacture"                                     
 '******************************************************************************
 
 '******************************************************************************
-'***    Constante Qui Defini Les Libelles Des Erreur                                     ***
-'******************************************************************************
-Public Const LIBELLEFONCTION = "FONCTION"                                                ' Le libelle fonction
-Public Const LIBELLEPROCEDURE = "PROCEDURE"                                         ' Le libelle procedure
-Public Const LIBELLEEVENEMENT = "EVENEMENT"                                         ' Le libelle evenement
-
-'******************************************************************************
 '***    Declaration De Object Public                                                             ***
 '******************************************************************************
 
@@ -77,7 +70,7 @@ Main_Exit:
     ' Fin
 Main_Erreur:
     ' Je l'ecrit dans le journal
-    gfloLogWebBase.AjouteErreur App, mconFeuilleType, mconFeuilleNom, LIBELLEPROCEDURE, "Main", vbNullString, Err
+    gfloLogWebBase.AjouteErreur App, mconFeuilleType, mconFeuilleNom, INSTRUCTIONPROCEDURE, "Main", vbNullString, Err
     ' Je Continue
     Resume Main_Exit
     ' Fin

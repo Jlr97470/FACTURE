@@ -3,8 +3,8 @@ Begin {C0E45035-5775-11D0-B388-00A0C9055D8E} DEFacture
    ClientHeight    =   19965
    ClientLeft      =   1080
    ClientTop       =   1500
-   ClientWidth     =   28680
-   _ExtentX        =   50588
+   ClientWidth     =   28740
+   _ExtentX        =   50694
    _ExtentY        =   35216
    FolderFlags     =   3
    TypeLibGuid     =   "{A5DC9AF5-9235-11D1-B067-00DD01144174}"
@@ -474,7 +474,7 @@ Begin {C0E45035-5775-11D0-B388-00A0C9055D8E} DEFacture
       CommandName     =   "DEcmdSqlClientContrat"
       CommDispId      =   1028
       RsDispId        =   1063
-      CommandText     =   $"DEFacture.dsx":0332
+      CommandText     =   $"DEFacture.dsx":03CB
       ActiveConnectionName=   "DEconFacture"
       CommandType     =   1
       Expanded        =   -1  'True
@@ -809,7 +809,7 @@ Begin {C0E45035-5775-11D0-B388-00A0C9055D8E} DEFacture
       CommandName     =   "DEcmdSqlClientV1"
       CommDispId      =   1033
       RsDispId        =   1066
-      CommandText     =   $"DEFacture.dsx":03BD
+      CommandText     =   $"DEFacture.dsx":0456
       ActiveConnectionName=   "DEconFacture"
       CommandType     =   1
       Expanded        =   -1  'True
@@ -1176,7 +1176,7 @@ Begin {C0E45035-5775-11D0-B388-00A0C9055D8E} DEFacture
       CommandName     =   "DEcmdSqlPassage"
       CommDispId      =   1038
       RsDispId        =   1050
-      CommandText     =   $"DEFacture.dsx":0565
+      CommandText     =   $"DEFacture.dsx":05FE
       ActiveConnectionName=   "DEconFacture"
       CommandType     =   1
       Expanded        =   -1  'True
@@ -1239,7 +1239,7 @@ Begin {C0E45035-5775-11D0-B388-00A0C9055D8E} DEFacture
       CommandName     =   "DEcmdSqlEcheancier"
       CommDispId      =   1051
       RsDispId        =   1068
-      CommandText     =   $"DEFacture.dsx":0656
+      CommandText     =   $"DEFacture.dsx":06EF
       ActiveConnectionName=   "DEconFacture"
       CommandType     =   1
       Expanded        =   -1  'True
