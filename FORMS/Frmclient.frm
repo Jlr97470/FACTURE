@@ -5,16 +5,16 @@ Begin VB.Form FrmClient
    BorderStyle     =   1  'Fixed Single
    Caption         =   "CLIENT"
    ClientHeight    =   8055
-   ClientLeft      =   1665
-   ClientTop       =   1560
-   ClientWidth     =   12765
+   ClientLeft      =   12840
+   ClientTop       =   6510
+   ClientWidth     =   12720
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MDIChild        =   -1  'True
    MinButton       =   0   'False
    NegotiateMenus  =   0   'False
    ScaleHeight     =   8055
-   ScaleWidth      =   12765
+   ScaleWidth      =   12720
    Begin VB.CommandButton cmdButton 
       Caption         =   "IMPRIMER ECHEANCIER"
       BeginProperty Font 
@@ -29,7 +29,7 @@ Begin VB.Form FrmClient
       Height          =   615
       Index           =   10
       Left            =   11280
-      TabIndex        =   77
+      TabIndex        =   45
       Top             =   7440
       Width           =   1455
    End
@@ -47,7 +47,7 @@ Begin VB.Form FrmClient
       Height          =   615
       Index           =   9
       Left            =   9840
-      TabIndex        =   76
+      TabIndex        =   44
       Top             =   7440
       Width           =   1455
    End
@@ -65,7 +65,7 @@ Begin VB.Form FrmClient
       Height          =   615
       Index           =   8
       Left            =   8400
-      TabIndex        =   75
+      TabIndex        =   43
       Top             =   7440
       Width           =   1455
    End
@@ -84,15 +84,28 @@ Begin VB.Form FrmClient
       ForeColor       =   &H0000FFFF&
       Height          =   4095
       Left            =   6480
-      TabIndex        =   67
+      TabIndex        =   72
       Top             =   3240
       Width           =   6255
+      Begin VB.CheckBox Check1 
+         BackColor       =   &H00C00000&
+         Caption         =   "ACTIF"
+         DataField       =   "CliConActif"
+         DataMember      =   "DEcmdTableClient"
+         DataSource      =   "DEFacture"
+         ForeColor       =   &H0080FFFF&
+         Height          =   375
+         Left            =   1080
+         TabIndex        =   34
+         Top             =   2280
+         Width           =   855
+      End
       Begin MSMask.MaskEdBox MaskEdBox8 
          Bindings        =   "Frmclient.frx":0000
          DataField       =   "CliConDatePaiment"
          BeginProperty DataFormat 
             Type            =   1
-            Format          =   "dd-MM-yyyy"
+            Format          =   "dd/MM/yyyy"
             HaveTrueFalseNull=   0
             FirstDayOfWeek  =   0
             FirstWeekOfYear =   0
@@ -103,13 +116,13 @@ Begin VB.Form FrmClient
          DataSource      =   "DEFacture"
          Height          =   285
          Left            =   1080
-         TabIndex        =   28
+         TabIndex        =   29
          Top             =   840
          Width           =   1215
          _ExtentX        =   2143
          _ExtentY        =   503
          _Version        =   393216
-         MaxLength       =   10
+         AllowPrompt     =   -1  'True
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Palatino Linotype"
             Size            =   8.25
@@ -119,7 +132,6 @@ Begin VB.Form FrmClient
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Mask            =   "##-##-####"
          PromptChar      =   "_"
       End
       Begin VB.TextBox txtCONTRATPRIX 
@@ -137,7 +149,7 @@ Begin VB.Form FrmClient
          EndProperty
          Height          =   285
          Left            =   4440
-         TabIndex        =   30
+         TabIndex        =   31
          Top             =   1320
          Width           =   1095
       End
@@ -156,7 +168,7 @@ Begin VB.Form FrmClient
          EndProperty
          Height          =   285
          Left            =   1080
-         TabIndex        =   29
+         TabIndex        =   30
          Top             =   1320
          Width           =   615
       End
@@ -175,7 +187,7 @@ Begin VB.Form FrmClient
          EndProperty
          Height          =   285
          Left            =   4440
-         TabIndex        =   27
+         TabIndex        =   28
          Top             =   360
          Width           =   855
       End
@@ -194,7 +206,7 @@ Begin VB.Form FrmClient
          EndProperty
          Height          =   285
          Left            =   1080
-         TabIndex        =   26
+         TabIndex        =   27
          Top             =   345
          Width           =   615
       End
@@ -203,7 +215,7 @@ Begin VB.Form FrmClient
          DataField       =   "CliConDateDebut"
          BeginProperty DataFormat 
             Type            =   1
-            Format          =   "dd-MM-yyyy"
+            Format          =   "dd/MM yyyy"
             HaveTrueFalseNull=   0
             FirstDayOfWeek  =   0
             FirstWeekOfYear =   0
@@ -214,13 +226,13 @@ Begin VB.Form FrmClient
          DataSource      =   "DEFacture"
          Height          =   285
          Left            =   1080
-         TabIndex        =   31
+         TabIndex        =   32
          Top             =   1800
          Width           =   1215
          _ExtentX        =   2143
          _ExtentY        =   503
          _Version        =   393216
-         MaxLength       =   10
+         AllowPrompt     =   -1  'True
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Palatino Linotype"
             Size            =   8.25
@@ -230,7 +242,6 @@ Begin VB.Form FrmClient
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Mask            =   "##-##-####"
          PromptChar      =   "_"
       End
       Begin MSMask.MaskEdBox MaskEdBox10 
@@ -238,7 +249,7 @@ Begin VB.Form FrmClient
          DataField       =   "CliConDateFin"
          BeginProperty DataFormat 
             Type            =   1
-            Format          =   "dd-MM-yyyy"
+            Format          =   "dd/MM/yyyy"
             HaveTrueFalseNull=   0
             FirstDayOfWeek  =   0
             FirstWeekOfYear =   0
@@ -249,13 +260,13 @@ Begin VB.Form FrmClient
          DataSource      =   "DEFacture"
          Height          =   285
          Left            =   4440
-         TabIndex        =   32
+         TabIndex        =   33
          Top             =   1800
          Width           =   1215
          _ExtentX        =   2143
          _ExtentY        =   503
          _Version        =   393216
-         MaxLength       =   10
+         AllowPrompt     =   -1  'True
          BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
             Name            =   "Palatino Linotype"
             Size            =   8.25
@@ -265,7 +276,6 @@ Begin VB.Form FrmClient
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
-         Mask            =   "##-##-####"
          PromptChar      =   "_"
       End
       Begin VB.Label lblFieldLabel 
@@ -286,7 +296,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   27
          Left            =   3210
-         TabIndex        =   74
+         TabIndex        =   79
          Top             =   1320
          Width           =   450
       End
@@ -308,7 +318,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   25
          Left            =   3240
-         TabIndex        =   73
+         TabIndex        =   78
          Top             =   1800
          Width           =   330
       End
@@ -330,7 +340,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   24
          Left            =   120
-         TabIndex        =   72
+         TabIndex        =   77
          Top             =   1800
          Width           =   645
       End
@@ -352,7 +362,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   23
          Left            =   120
-         TabIndex        =   71
+         TabIndex        =   76
          Top             =   1320
          Width           =   435
       End
@@ -374,7 +384,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   21
          Left            =   120
-         TabIndex        =   70
+         TabIndex        =   75
          Top             =   840
          Width           =   990
       End
@@ -396,7 +406,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   20
          Left            =   3135
-         TabIndex        =   69
+         TabIndex        =   74
          Top             =   360
          Width           =   1185
       End
@@ -418,7 +428,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   19
          Left            =   90
-         TabIndex        =   68
+         TabIndex        =   73
          Top             =   360
          Width           =   495
       End
@@ -438,9 +448,22 @@ Begin VB.Form FrmClient
       ForeColor       =   &H0000FFFF&
       Height          =   1695
       Left            =   6480
-      TabIndex        =   60
+      TabIndex        =   65
       Top             =   1440
       Width           =   6255
+      Begin VB.CheckBox Check2 
+         BackColor       =   &H00C00000&
+         Caption         =   "ACTIF"
+         DataField       =   "CliChdActif"
+         DataMember      =   "DEcmdTableClient"
+         DataSource      =   "DEFacture"
+         ForeColor       =   &H0080FFFF&
+         Height          =   375
+         Left            =   5160
+         TabIndex        =   23
+         Top             =   240
+         Width           =   855
+      End
       Begin VB.TextBox txtCHAUDIEREPUISSANCE 
          DataField       =   "CliChdPuissance"
          DataMember      =   "DEcmdTableClient"
@@ -456,7 +479,7 @@ Begin VB.Form FrmClient
          EndProperty
          Height          =   285
          Left            =   1080
-         TabIndex        =   66
+         TabIndex        =   71
          Top             =   1320
          Width           =   615
       End
@@ -475,7 +498,7 @@ Begin VB.Form FrmClient
          EndProperty
          Height          =   285
          Left            =   4440
-         TabIndex        =   25
+         TabIndex        =   26
          Top             =   960
          Width           =   1215
       End
@@ -494,7 +517,7 @@ Begin VB.Form FrmClient
          EndProperty
          Height          =   285
          Left            =   1080
-         TabIndex        =   24
+         TabIndex        =   25
          Top             =   960
          Width           =   615
       End
@@ -524,7 +547,7 @@ Begin VB.Form FrmClient
          DataSource      =   "DEFacture"
          Height          =   285
          Left            =   1080
-         TabIndex        =   23
+         TabIndex        =   24
          Top             =   600
          Width           =   1770
          _ExtentX        =   3122
@@ -562,7 +585,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   18
          Left            =   30
-         TabIndex        =   65
+         TabIndex        =   70
          Top             =   1320
          Width           =   1050
       End
@@ -584,7 +607,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   17
          Left            =   3810
-         TabIndex        =   64
+         TabIndex        =   69
          Top             =   960
          Width           =   495
       End
@@ -606,7 +629,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   16
          Left            =   75
-         TabIndex        =   63
+         TabIndex        =   68
          Top             =   960
          Width           =   420
       End
@@ -628,7 +651,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   10
          Left            =   45
-         TabIndex        =   62
+         TabIndex        =   67
          Top             =   240
          Width           =   825
       End
@@ -650,7 +673,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   9
          Left            =   105
-         TabIndex        =   61
+         TabIndex        =   66
          Top             =   600
          Width           =   240
       End
@@ -670,7 +693,7 @@ Begin VB.Form FrmClient
       ForeColor       =   &H0000FFFF&
       Height          =   1335
       Left            =   6480
-      TabIndex        =   44
+      TabIndex        =   49
       Top             =   0
       Width           =   6255
       Begin VB.TextBox txtLOCALISATIONDIGICODE 
@@ -786,7 +809,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   15
          Left            =   3450
-         TabIndex        =   49
+         TabIndex        =   54
          Top             =   900
          Width           =   930
       End
@@ -808,7 +831,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   14
          Left            =   375
-         TabIndex        =   48
+         TabIndex        =   53
          Top             =   885
          Width           =   645
       End
@@ -830,7 +853,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   13
          Left            =   3735
-         TabIndex        =   47
+         TabIndex        =   52
          Top             =   375
          Width           =   645
       End
@@ -852,7 +875,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   12
          Left            =   2205
-         TabIndex        =   46
+         TabIndex        =   51
          Top             =   360
          Width           =   375
       End
@@ -874,7 +897,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   11
          Left            =   120
-         TabIndex        =   45
+         TabIndex        =   50
          Top             =   345
          Width           =   1005
       End
@@ -883,7 +906,7 @@ Begin VB.Form FrmClient
       Bindings        =   "Frmclient.frx":006C
       Height          =   3015
       Left            =   0
-      TabIndex        =   43
+      TabIndex        =   48
       Top             =   4320
       Width           =   6375
       _ExtentX        =   11245
@@ -1797,7 +1820,7 @@ Begin VB.Form FrmClient
       ForeColor       =   &H0000FFFF&
       Height          =   4215
       Left            =   0
-      TabIndex        =   39
+      TabIndex        =   46
       Top             =   0
       Width           =   6375
       Begin MSMask.MaskEdBox MaskEdBox6 
@@ -2156,7 +2179,7 @@ Begin VB.Form FrmClient
          Top             =   1080
          Width           =   2265
       End
-      Begin MSMask.MaskEdBox ctlCLIENTNUMERO 
+      Begin MSMask.MaskEdBox MaskEdBox 
          Bindings        =   "Frmclient.frx":013A
          DataField       =   "CliNum"
          DataMember      =   "DEcmdTableClient"
@@ -2219,7 +2242,7 @@ Begin VB.Form FrmClient
          Mask            =   "#####"
          PromptChar      =   "_"
       End
-      Begin VB.Label Label2 
+      Begin VB.Label LbLSouscripteur 
          BackColor       =   &H00C00000&
          Caption         =   "SOUSCRIPTEUR"
          BeginProperty Font 
@@ -2234,11 +2257,11 @@ Begin VB.Form FrmClient
          ForeColor       =   &H0000FFFF&
          Height          =   255
          Left            =   3840
-         TabIndex        =   59
+         TabIndex        =   64
          Top             =   720
          Width           =   2295
       End
-      Begin VB.Label Label1 
+      Begin VB.Label LblUtilisateur 
          BackColor       =   &H00C00000&
          Caption         =   "UTILISATEUR"
          BeginProperty Font 
@@ -2253,7 +2276,7 @@ Begin VB.Form FrmClient
          ForeColor       =   &H0000FFFF&
          Height          =   255
          Left            =   1440
-         TabIndex        =   58
+         TabIndex        =   63
          Top             =   720
          Width           =   2055
       End
@@ -2275,7 +2298,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   8
          Left            =   120
-         TabIndex        =   57
+         TabIndex        =   62
          Top             =   3840
          Width           =   855
       End
@@ -2297,7 +2320,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   7
          Left            =   120
-         TabIndex        =   56
+         TabIndex        =   61
          Top             =   3480
          Width           =   780
       End
@@ -2319,7 +2342,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   6
          Left            =   120
-         TabIndex        =   55
+         TabIndex        =   60
          Top             =   2880
          Width           =   540
       End
@@ -2341,7 +2364,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   5
          Left            =   120
-         TabIndex        =   54
+         TabIndex        =   59
          Top             =   2520
          Width           =   1260
       End
@@ -2363,7 +2386,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   4
          Left            =   120
-         TabIndex        =   53
+         TabIndex        =   58
          Top             =   2160
          Width           =   555
       End
@@ -2385,7 +2408,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   3
          Left            =   75
-         TabIndex        =   52
+         TabIndex        =   57
          Top             =   1800
          Width           =   855
       End
@@ -2407,7 +2430,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   2
          Left            =   120
-         TabIndex        =   51
+         TabIndex        =   56
          Top             =   1440
          Width           =   825
       End
@@ -2429,7 +2452,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   0
          Left            =   120
-         TabIndex        =   50
+         TabIndex        =   55
          Top             =   1080
          Width           =   480
       End
@@ -2451,7 +2474,7 @@ Begin VB.Form FrmClient
          Height          =   240
          Index           =   1
          Left            =   120
-         TabIndex        =   42
+         TabIndex        =   47
          Top             =   240
          Width           =   825
       End
@@ -2470,7 +2493,7 @@ Begin VB.Form FrmClient
       Height          =   615
       Index           =   7
       Left            =   6960
-      TabIndex        =   41
+      TabIndex        =   42
       Top             =   7440
       Width           =   1455
    End
@@ -2488,7 +2511,7 @@ Begin VB.Form FrmClient
       Height          =   615
       Index           =   6
       Left            =   5760
-      TabIndex        =   40
+      TabIndex        =   41
       Top             =   7440
       Width           =   1215
    End
@@ -2506,7 +2529,7 @@ Begin VB.Form FrmClient
       Height          =   615
       Index           =   5
       Left            =   4440
-      TabIndex        =   38
+      TabIndex        =   40
       Top             =   7440
       Width           =   1335
    End
@@ -2526,7 +2549,7 @@ Begin VB.Form FrmClient
       Index           =   4
       Left            =   3360
       MaskColor       =   &H0000FFFF&
-      TabIndex        =   37
+      TabIndex        =   39
       Top             =   7440
       Width           =   1095
    End
@@ -2535,7 +2558,7 @@ Begin VB.Form FrmClient
       Height          =   615
       Index           =   3
       Left            =   2520
-      TabIndex        =   36
+      TabIndex        =   38
       Top             =   7440
       Width           =   855
    End
@@ -2544,7 +2567,7 @@ Begin VB.Form FrmClient
       Height          =   615
       Index           =   2
       Left            =   1680
-      TabIndex        =   35
+      TabIndex        =   37
       Top             =   7440
       Width           =   855
    End
@@ -2553,7 +2576,7 @@ Begin VB.Form FrmClient
       Height          =   615
       Index           =   1
       Left            =   840
-      TabIndex        =   34
+      TabIndex        =   36
       Top             =   7440
       Width           =   855
    End
@@ -2562,7 +2585,7 @@ Begin VB.Form FrmClient
       Height          =   615
       Index           =   0
       Left            =   0
-      TabIndex        =   33
+      TabIndex        =   35
       Top             =   7440
       Width           =   855
    End

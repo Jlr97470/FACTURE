@@ -1,7 +1,7 @@
 VERSION 5.00
 Begin VB.Form FrmClientRecherche 
    BorderStyle     =   1  'Fixed Single
-   ClientHeight    =   2280
+   ClientHeight    =   2295
    ClientLeft      =   4770
    ClientTop       =   4560
    ClientWidth     =   6495
@@ -9,7 +9,7 @@ Begin VB.Form FrmClientRecherche
    MaxButton       =   0   'False
    MinButton       =   0   'False
    NegotiateMenus  =   0   'False
-   ScaleHeight     =   2280
+   ScaleHeight     =   2295
    ScaleWidth      =   6495
    StartUpPosition =   1  'CenterOwner
    Begin VB.CommandButton cmdOk 
